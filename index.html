@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html class="light" lang="en" style="">
-<head>
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>UtilityCore NIS Management</title>
@@ -117,7 +115,25 @@
         .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
     </style>
-</head>
+<style id="theme-styles">
+html.theme-minimalist * {
+    border-radius: 0 !important;
+}
+html.theme-minimalist .shadow-sm,
+html.theme-minimalist .shadow-md,
+html.theme-minimalist .shadow-lg {
+    box-shadow: none !important;
+}
+html.theme-minimalist .bg-primary {
+    background-color: #333333 !important;
+}
+html.theme-minimalist .text-primary {
+    color: #333333 !important;
+}
+html.theme-minimalist .bg-surface-container-lowest {
+    border: 1px solid #e5e7eb;
+}
+</style></head>
 <body class="bg-background text-on-background selection:bg-secondary-container/30">
 <!-- Shell Layout -->
 <div class="flex min-h-screen overflow-hidden">
@@ -159,13 +175,13 @@
 </div>
 </aside>
 <!-- Main Content Area -->
-<main class="flex-1 ml-64 flex flex-col min-h-screen">
+<main class="flex-1 ml-64 flex flex-col min-h-screen"><div id="view-management" class="w-full h-full flex flex-col">
 <!-- Predicted TopNavBar Component -->
 <header class="flex justify-between items-center px-container-padding w-full sticky top-0 z-50 bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline h-16 shadow-sm">
 <div class="flex items-center gap-6">
 <div class="hidden md:flex items-center bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant">
 <span class="material-symbols-outlined text-outline mr-2" data-icon="search">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-body-md font-body-md w-64 placeholder:text-on-surface-variant/50" placeholder="Search NISS, Name or Locality..." type="text">
+<input class="bg-transparent border-none focus:ring-0 text-body-md font-body-md w-64 placeholder:text-on-surface-variant/50" placeholder="Search NISS, Name or Locality..." type="text" id="global-search">
 </div>
 </div>
 <div class="flex items-center gap-4">
@@ -262,7 +278,51 @@
 </div>
 <!-- Footer Section -->
 <footer class="mt-auto p-8 border-t border-outline-variant bg-surface-container-lowest"><div class="max-w-7xl mx-auto text-center text-on-surface-variant font-bold tracking-widest uppercase">NISS MANAGEMENT SYSTEM</div></footer>
-</main>
+</div><div id="view-settings" class="w-full h-full flex flex-col hidden p-8">
+<div class="max-w-4xl mx-auto w-full">
+    <div class="mb-8">
+        <h1 class="text-display-sm text-on-surface font-bold tracking-tight mb-2">Settings</h1>
+        <p class="text-body-lg text-on-surface-variant">Customize your workspace and application preferences.</p>
+    </div>
+    
+    <div class="bg-surface-container-lowest rounded-3xl p-8 border border-outline-variant shadow-sm mb-8">
+        <h2 class="text-title-lg font-bold text-on-surface mb-6 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary">palette</span> Appearance &amp; Themes
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Light Theme -->
+            <button id="theme-light" class="theme-btn border-2 border-primary bg-surface-container-lowest rounded-2xl p-6 text-left transition-all hover:shadow-md flex flex-col gap-4 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                <span class="material-symbols-outlined text-3xl text-primary">light_mode</span>
+                <div>
+                    <h3 class="font-bold text-on-surface text-lg">Light Mode</h3>
+                    <p class="text-sm text-on-surface-variant mt-1">Clean and bright (Default)</p>
+                </div>
+            </button>
+            
+            <!-- Dark Theme -->
+            <button id="theme-dark" class="theme-btn border-2 border-outline-variant bg-slate-900 rounded-2xl p-6 text-left transition-all hover:border-slate-500 hover:shadow-md flex flex-col gap-4 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-16 h-16 bg-white/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                <span class="material-symbols-outlined text-3xl text-white">dark_mode</span>
+                <div>
+                    <h3 class="font-bold text-white text-lg">Dark Mode</h3>
+                    <p class="text-sm text-slate-400 mt-1">Easy on the eyes</p>
+                </div>
+            </button>
+            
+            <!-- Minimalist Theme -->
+            <button id="theme-minimalist" class="theme-btn border-2 border-outline-variant bg-gray-50 rounded-none p-6 text-left transition-all hover:border-gray-400 flex flex-col gap-4">
+                <span class="material-symbols-outlined text-3xl text-gray-700">texture</span>
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg">Minimalist</h3>
+                    <p class="text-sm text-gray-500 mt-1">Flat, sharp edges, no shadows</p>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+</div></main>
 </div>
 <!-- Micro-interactions Script -->
 
@@ -1519,6 +1579,74 @@
                 fetchData();
             }
         });
+    
+    // --- Navigation Logic ---
+    const btnNavManagement = document.getElementById('btn-nav-management');
+    const btnNavSettings = document.getElementById('btn-nav-settings');
+    const viewManagement = document.getElementById('view-management');
+    const viewSettings = document.getElementById('view-settings');
+
+    const activeNavClass = 'w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-primary text-white font-bold shadow-md shadow-primary/20 transition-all';
+    const inactiveNavClass = 'w-full flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-surface-container-low transition-colors text-on-surface-variant font-medium';
+
+    btnNavManagement.addEventListener('click', () => {
+        btnNavManagement.className = activeNavClass;
+        btnNavSettings.className = inactiveNavClass;
+        viewManagement.classList.remove('hidden');
+        viewSettings.classList.add('hidden');
+    });
+
+    btnNavSettings.addEventListener('click', () => {
+        btnNavSettings.className = activeNavClass;
+        btnNavManagement.className = inactiveNavClass;
+        viewSettings.classList.remove('hidden');
+        viewManagement.classList.add('hidden');
+    });
+
+    // --- Theme Logic ---
+    function applyTheme(theme) {
+        const html = document.documentElement;
+        html.classList.remove('dark', 'theme-minimalist');
+        
+        const btns = document.querySelectorAll('.theme-btn');
+        btns.forEach(btn => {
+            btn.classList.remove('border-primary', 'ring-4', 'ring-primary/20');
+            if(btn.id !== 'theme-dark') btn.classList.add('border-outline-variant');
+        });
+
+        if (theme === 'dark') {
+            html.classList.add('dark');
+            document.getElementById('theme-dark').classList.add('border-primary', 'ring-4', 'ring-primary/20');
+            document.getElementById('theme-dark').classList.remove('border-outline-variant');
+        } else if (theme === 'minimalist') {
+            html.classList.add('theme-minimalist');
+            document.getElementById('theme-minimalist').classList.add('border-gray-800', 'ring-4', 'ring-gray-800/20');
+            document.getElementById('theme-minimalist').classList.remove('border-outline-variant');
+        } else {
+            // light
+            document.getElementById('theme-light').classList.add('border-primary', 'ring-4', 'ring-primary/20');
+            document.getElementById('theme-light').classList.remove('border-outline-variant');
+        }
+        localStorage.setItem('niss-theme', theme);
+    }
+
+    document.getElementById('theme-light').addEventListener('click', () => applyTheme('light'));
+    document.getElementById('theme-dark').addEventListener('click', () => applyTheme('dark'));
+    document.getElementById('theme-minimalist').addEventListener('click', () => applyTheme('minimalist'));
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('niss-theme') || 'light';
+    applyTheme(savedTheme);
+
+    // --- Global Search Logic ---
+    const globalSearch = document.getElementById('global-search');
+    globalSearch.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            currentPage = 1;
+            fetchData();
+        }
+    });
+
     });
 
     async function fetchData() {
@@ -1528,8 +1656,18 @@
         const dept = deptSelect.value.trim();
         const muni = muniSelect.value.trim();
         const loc = locSelect.value.trim();
+        const searchVal = document.getElementById('global-search').value.trim();
 
         let query = supabase.from(TABLE_NAME).select('*', { count: 'exact' });
+
+        if (searchVal) {
+            // Check if searchVal is purely numeric for NIS exact match
+            if (/^\d+$/.test(searchVal)) {
+                 query = query.or(`NIS.eq.${searchVal},Cliente.ilike.%${searchVal}%,Localidad.ilike.%${searchVal}%,Dirección.ilike.%${searchVal}%`);
+            } else {
+                 query = query.or(`Cliente.ilike.%${searchVal}%,Localidad.ilike.%${searchVal}%,Dirección.ilike.%${searchVal}%`);
+            }
+        }
 
         if (dept) query = query.eq('Departamento', dept);
         if (muni) query = query.eq('Municipio', muni);
@@ -1614,5 +1752,6 @@
         });
     }
 </script>
-</body>
-</html>
+
+
+</body></html>
