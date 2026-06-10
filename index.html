@@ -17,53 +17,53 @@
         theme: {
           extend: {
             "colors": {
-                    "primary-container": "#002855",
+                    "primary-container": "var(--color-primary-container)",
                     "on-tertiary": "#ffffff",
                     "tertiary-container": "#491a00",
                     "on-tertiary-fixed": "#341100",
-                    "surface": "#f8f9ff",
-                    "on-primary": "#ffffff",
-                    "surface-dim": "#cbdbf5",
-                    "on-primary-container": "#7490c3",
+                    "surface": "var(--color-surface)",
+                    "on-primary": "var(--color-on-primary, #ffffff)",
+                    "surface-dim": "var(--color-surface-dim, #cbdbf5)",
+                    "on-primary-container": "var(--color-on-primary-container, #7490c3)",
                     "inverse-on-surface": "#eaf1ff",
                     "surface-bright": "#f8f9ff",
                     "secondary-fixed": "#d4e3ff",
-                    "on-surface": "#0b1c30",
-                    "secondary-container": "#68abff",
-                    "on-background": "#0b1c30",
+                    "on-surface": "var(--color-on-surface)",
+                    "secondary-container": "var(--color-secondary-container)",
+                    "on-background": "var(--color-on-surface)",
                     "secondary-fixed-dim": "#a4c9ff",
-                    "surface-container-highest": "#d3e4fe",
+                    "surface-container-highest": "var(--color-surface-container-highest)",
                     "primary-fixed": "#d6e3ff",
-                    "surface-container": "#e5eeff",
+                    "surface-container": "var(--color-surface-container)",
                     "error-container": "#ffdad6",
-                    "on-surface-variant": "#43474f",
-                    "surface-container-low": "#eff4ff",
+                    "on-surface-variant": "var(--color-on-surface-variant)",
+                    "surface-container-low": "var(--color-surface-container-low)",
                     "on-tertiary-container": "#c77e59",
-                    "primary": "#001430",
+                    "primary": "var(--color-primary)",
                     "on-secondary": "#ffffff",
                     "tertiary-fixed-dim": "#ffb692",
                     "primary-fixed-dim": "#aac7fd",
-                    "background": "#f8f9ff",
-                    "outline-variant": "#c4c6d0",
+                    "background": "var(--color-background)",
+                    "outline-variant": "var(--color-outline-variant)",
                     "inverse-primary": "#aac7fd",
                     "on-secondary-fixed-variant": "#004883",
                     "on-primary-fixed-variant": "#284775",
                     "surface-tint": "#415f8f",
-                    "outline": "#747780",
+                    "outline": "var(--color-outline)",
                     "tertiary-fixed": "#ffdbcb",
                     "on-secondary-fixed": "#001c39",
                     "on-error-container": "#93000a",
                     "error": "#ba1a1a",
-                    "secondary": "#0060ac",
+                    "secondary": "var(--color-secondary)",
                     "inverse-surface": "#213145",
                     "on-error": "#ffffff",
                     "on-primary-fixed": "#001b3d",
-                    "on-secondary-container": "#003e73",
-                    "surface-variant": "#d3e4fe",
-                    "surface-container-high": "#dce9ff",
+                    "on-secondary-container": "var(--color-on-secondary-container)",
+                    "surface-variant": "var(--color-surface-variant, #d3e4fe)",
+                    "surface-container-high": "var(--color-surface-container-high, #dce9ff)",
                     "tertiary": "#280b00",
                     "on-tertiary-fixed-variant": "#703718",
-                    "surface-container-lowest": "#ffffff"
+                    "surface-container-lowest": "var(--color-surface-container-lowest)"
             },
             "borderRadius": {
                     "DEFAULT": "0.125rem",
@@ -116,22 +116,95 @@
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
     </style>
 <style id="theme-styles">
-html.theme-minimalist * {
-    border-radius: 0 !important;
+/* Default Light Mode Variables */
+:root {
+  --color-surface: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface-container: #e5eeff;
+  --color-background: #f8f9ff;
+  --color-primary-container: #002855;
+  --color-primary: #001430;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #43474f;
+  --color-outline-variant: #c4c6d0;
+  --color-secondary-container: #68abff;
+  --color-on-secondary-container: #003e73;
+  --color-secondary: #0060ac;
+  --color-outline: #747780;
 }
-html.theme-minimalist .shadow-sm,
-html.theme-minimalist .shadow-md,
-html.theme-minimalist .shadow-lg {
-    box-shadow: none !important;
+
+/* Dark Mode Colors (Grayscale/Black/White) */
+html.dark {
+  --color-surface: #121212;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container-low: #1a1a1a;
+  --color-surface-container-highest: #2a2a2a;
+  --color-surface-container: #1e1e1e;
+  --color-background: #0a0a0a;
+  --color-primary-container: #1e1e1e;
+  --color-primary: #ffffff;
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #cccccc;
+  --color-outline-variant: #404040;
+  --color-secondary-container: #333333;
+  --color-on-secondary-container: #ffffff;
+  --color-secondary: #999999;
+  --color-outline: #666666;
 }
-html.theme-minimalist .bg-primary {
+
+/* Fix text and input rendering for dark mode */
+html.dark input, html.dark select, html.dark button {
+    color: white;
+    background-color: var(--color-surface-container-low);
+}
+html.dark option {
+    background-color: var(--color-surface-container-lowest);
+    color: white;
+}
+html.dark .text-primary, html.dark .bg-primary {
+    color: #ffffff !important;
     background-color: #333333 !important;
 }
-html.theme-minimalist .text-primary {
-    color: #333333 !important;
+html.dark .border-primary {
+    border-color: #666666 !important;
 }
-html.theme-minimalist .bg-surface-container-lowest {
-    border: 1px solid #e5e7eb;
+
+/* Minimalist Mode (Better appearance, modern monochrome, sleek) */
+html.theme-minimalist {
+  --color-primary: #111827;
+  --color-primary-container: #f3f4f6;
+  --color-secondary: #4b5563;
+  --color-secondary-container: #e5e7eb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f9fafb;
+  --color-surface-container-highest: #f3f4f6;
+  --color-surface-container: #f9fafb;
+  --color-surface: #ffffff;
+  --color-background: #ffffff;
+  --color-outline-variant: #e5e7eb;
+  --color-on-surface: #111827;
+  --color-on-surface-variant: #6b7280;
+}
+html.theme-minimalist * {
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+html.theme-minimalist select, html.theme-minimalist input {
+  border: 1px solid #d1d5db !important;
+  background-color: transparent !important;
+}
+html.theme-minimalist .bg-primary {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+html.theme-minimalist header, html.theme-minimalist aside {
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+html.theme-minimalist .theme-btn {
+  border: 1px solid #e5e7eb;
 }
 </style></head>
 <body class="bg-background text-on-background selection:bg-secondary-container/30">
@@ -1640,8 +1713,17 @@ html.theme-minimalist .bg-surface-container-lowest {
 
     // --- Global Search Logic ---
     const globalSearch = document.getElementById('global-search');
+    let searchTimeout;
+    globalSearch.addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            currentPage = 1;
+            fetchData();
+        }, 500);
+    });
     globalSearch.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
+            clearTimeout(searchTimeout);
             currentPage = 1;
             fetchData();
         }
@@ -1663,9 +1745,9 @@ html.theme-minimalist .bg-surface-container-lowest {
         if (searchVal) {
             // Check if searchVal is purely numeric for NIS exact match
             if (/^\d+$/.test(searchVal)) {
-                 query = query.or(`NIS.eq.${searchVal},Cliente.ilike.%${searchVal}%,Localidad.ilike.%${searchVal}%,Dirección.ilike.%${searchVal}%`);
+                 query = query.or(`NIS.eq.${searchVal},Cliente.ilike.%${searchVal}%,Localidad.ilike.%${searchVal}%`);
             } else {
-                 query = query.or(`Cliente.ilike.%${searchVal}%,Localidad.ilike.%${searchVal}%,Dirección.ilike.%${searchVal}%`);
+                 query = query.or(`Cliente.ilike.%${searchVal}%,Localidad.ilike.%${searchVal}%`);
             }
         }
 
