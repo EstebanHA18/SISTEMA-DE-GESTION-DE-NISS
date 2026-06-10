@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <!-- Supabase JS -->
-<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
 <!-- Tailwind CSS with Plugins -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -190,1057 +190,18 @@
 <label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Department</label>
 <select id="filter-department" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:outline-none transition-shadow appearance-none cursor-pointer">
 <option value="">All Departments</option>
-<option value="BOACO">BOACO</option>
-<option value="CHINANDEGA">CHINANDEGA</option>
-<option value="CHONTALES">CHONTALES</option>
-<option value="LEON">LEON</option>
-<option value="MANAGUA">MANAGUA</option>
-<option value="NVA. SEGOVIA">NVA. SEGOVIA</option>
 </select>
 </div>
 <div class="md:col-span-1 bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant shadow-sm flex flex-col gap-3">
 <label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Municipality</label>
 <select id="filter-municipality" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:outline-none transition-shadow appearance-none cursor-pointer">
 <option value="">All Municipalities</option>
-<option value="ACHUAPA">ACHUAPA</option>
-<option value="ACOYAPA">ACOYAPA</option>
-<option value="BOACO">BOACO</option>
-<option value="CHICHIGALPA">CHICHIGALPA</option>
-<option value="CHINANDEGA">CHINANDEGA</option>
-<option value="CINCO PINOS">CINCO PINOS</option>
-<option value="CORINTO">CORINTO</option>
-<option value="EL JICARAL">EL JICARAL</option>
-<option value="EL SAUCE">EL SAUCE</option>
-<option value="EL VIEJO">EL VIEJO</option>
-<option value="LA PAZ CENTRO">LA PAZ CENTRO</option>
-<option value="LARREYNAGA">LARREYNAGA</option>
-<option value="LEON">LEON</option>
-<option value="NAGAROTE">NAGAROTE</option>
-<option value="OCOTAL">OCOTAL</option>
-<option value="POSOLTEGA">POSOLTEGA</option>
-<option value="PUERTO MORAZAN">PUERTO MORAZAN</option>
-<option value="QUEZALGUAQUE">QUEZALGUAQUE</option>
-<option value="REALEJO">REALEJO</option>
-<option value="SAN FRANCISCO DEL NORTE">SAN FRANCISCO DEL NORTE</option>
-<option value="SAN PEDRO DEL NORTE">SAN PEDRO DEL NORTE</option>
-<option value="SANTA ROSA DEL PEÃ‘ON">SANTA ROSA DEL PEÃ‘ON</option>
-<option value="SANTO TOMAS DEL NORTE">SANTO TOMAS DEL NORTE</option>
-<option value="SOMOTILLO">SOMOTILLO</option>
-<option value="TELICA">TELICA</option>
-<option value="TICUANTEPE">TICUANTEPE</option>
-<option value="VILLANUEVA">VILLANUEVA</option>
 </select>
 </div>
 <div class="md:col-span-1 bg-surface-container-lowest p-5 rounded-2xl border border-outline-variant shadow-sm flex flex-col gap-3">
 <label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Locality</label>
 <select id="filter-locality" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 text-body-md text-on-surface focus:ring-2 focus:ring-primary focus:outline-none transition-shadow appearance-none cursor-pointer">
 <option value="">All Localities</option>
-<option value="12 DE SEPTIEMBRE(CHINAND)">12 DE SEPTIEMBRE(CHINAND)</option>
-<option value="1RO. DE MAYO">1RO. DE MAYO</option>
-<option value="2 DE SEPTIEMBRE">2 DE SEPTIEMBRE</option>
-<option value="25 DE FEBRERO">25 DE FEBRERO</option>
-<option value="28 DE OCTUBRE">28 DE OCTUBRE</option>
-<option value="3 DE JULIO(LEON)">3 DE JULIO(LEON)</option>
-<option value="ABANGASCA">ABANGASCA</option>
-<option value="ABRAHAM RUGAMA">ABRAHAM RUGAMA</option>
-<option value="ACHUAPA">ACHUAPA</option>
-<option value="AGUAS FRIAS">AGUAS FRIAS</option>
-<option value="AGUILERA">AGUILERA</option>
-<option value="AGUSTO CESAR SANDINO">AGUSTO CESAR SANDINO</option>
-<option value="ALEX CENTENO">ALEX CENTENO</option>
-<option value="ALFONSO CORTEZ">ALFONSO CORTEZ</option>
-<option value="ALMENDRO">ALMENDRO</option>
-<option value="AMATITAN">AMATITAN</option>
-<option value="AMEYA">AMEYA</option>
-<option value="AMIGOS DE HOLANDA">AMIGOS DE HOLANDA</option>
-<option value="ANA VIRGEN ROBLE(CHINAN)">ANA VIRGEN ROBLE(CHINAN)</option>
-<option value="ANDRES ZAPATA">ANDRES ZAPATA</option>
-<option value="ANEXO OSCAR PEREZ">ANEXO OSCAR PEREZ</option>
-<option value="ANEXO RANCHERIA">ANEXO RANCHERIA</option>
-<option value="ANEXO SAN JERONIMO(LEON)">ANEXO SAN JERONIMO(LEON)</option>
-<option value="ANEXO VILLA 15">ANEXO VILLA 15</option>
-<option value="ANEXO VILLA 23 DE JULIO">ANEXO VILLA 23 DE JULIO</option>
-<option value="ANEXO VILLA AUSTRIA">ANEXO VILLA AUSTRIA</option>
-<option value="ANEXO VILLA SOBERANA">ANEXO VILLA SOBERANA</option>
-<option value="ANTENOR SANDINO">ANTENOR SANDINO</option>
-<option value="ANTENOR SANDINO II ETAPA">ANTENOR SANDINO II ETAPA</option>
-<option value="ANTENOR SANDINO III ETAPA">ANTENOR SANDINO III ETAPA</option>
-<option value="ANTONIO LARA(CORINTO)">ANTONIO LARA(CORINTO)</option>
-<option value="APANGARE">APANGARE</option>
-<option value="APARRAYA">APARRAYA</option>
-<option value="APASCALI">APASCALI</option>
-<option value="APC. COMAN-ENCA(CORINTO)">APC. COMAN-ENCA(CORINTO)</option>
-<option value="APOSENTILLO">APOSENTILLO</option>
-<option value="ARACELLYS PEREZ">ARACELLYS PEREZ</option>
-<option value="ARROCERA">ARROCERA</option>
-<option value="ASERRADORES">ASERRADORES</option>
-<option value="ASOCHIVA">ASOCHIVA</option>
-<option value="AUGUSTO C SANDINO #1">AUGUSTO C SANDINO #1</option>
-<option value="AUGUSTO C SANDINO #2">AUGUSTO C SANDINO #2</option>
-<option value="AUGUSTO C. SANDINO">AUGUSTO C. SANDINO</option>
-<option value="AURELIO CARRASCO">AURELIO CARRASCO</option>
-<option value="AVE. DEBAYLE">AVE. DEBAYLE</option>
-<option value="AYAPAL (CHINANDEGA)">AYAPAL (CHINANDEGA)</option>
-<option value="AZARIAS H PALLAIS">AZARIAS H PALLAIS</option>
-<option value="B. NUEVO (NAGAROTE)">B. NUEVO (NAGAROTE)</option>
-<option value="BAJO LOS NEGROS">BAJO LOS NEGROS</option>
-<option value="BAL JIQUILILLO">BAL JIQUILILLO</option>
-<option value="BARRIO NUEVO">BARRIO NUEVO</option>
-<option value="BARRIO NUEVO(CORINTO)">BARRIO NUEVO(CORINTO)</option>
-<option value="BASCULA A. FEDERAL(CHINA">BASCULA A. FEDERAL(CHINA</option>
-<option value="BAVINIC">BAVINIC</option>
-<option value="BAYARDO ARCE">BAYARDO ARCE</option>
-<option value="BELEN(CHINANDEGA)">BELEN(CHINANDEGA)</option>
-<option value="BELLA VISTA">BELLA VISTA</option>
-<option value="BELLA VISTA (SALINAS GRANDES)">BELLA VISTA (SALINAS GRANDES)</option>
-<option value="BELLO AMANECER">BELLO AMANECER</option>
-<option value="BENDICION DE DIOS">BENDICION DE DIOS</option>
-<option value="BETANIA">BETANIA</option>
-<option value="BETESDA">BETESDA</option>
-<option value="BETHEL">BETHEL</option>
-<option value="BIJAGUA ABAJO">BIJAGUA ABAJO</option>
-<option value="BIJAGUA ARRIBA">BIJAGUA ARRIBA</option>
-<option value="BISMARCK MARTINEZ">BISMARCK MARTINEZ</option>
-<option value="BISMARK MARTINEZ">BISMARK MARTINEZ</option>
-<option value="BO. 17 DE JULIO">BO. 17 DE JULIO</option>
-<option value="BO. ADRIAN REYES">BO. ADRIAN REYES</option>
-<option value="BO. AGAPITO OSORIO">BO. AGAPITO OSORIO</option>
-<option value="BO. ANTONIO ULLOA">BO. ANTONIO ULLOA</option>
-<option value="BO. ARIEL SABALLOS">BO. ARIEL SABALLOS</option>
-<option value="BO. CAMILO ORTEGA">BO. CAMILO ORTEGA</option>
-<option value="BO. CARLOS FONSECA">BO. CARLOS FONSECA</option>
-<option value="BO. CAYETANO SANCHEZ">BO. CAYETANO SANCHEZ</option>
-<option value="BO. EDGARDO COREA">BO. EDGARDO COREA</option>
-<option value="BO. EL CEMENTERIO">BO. EL CEMENTERIO</option>
-<option value="BO. EL SEMENTERIO">BO. EL SEMENTERIO</option>
-<option value="BO. ELIAS TELLEZ">BO. ELIAS TELLEZ</option>
-<option value="BO. ENRIQUE COREA">BO. ENRIQUE COREA</option>
-<option value="BO. ESQUIPULAS">BO. ESQUIPULAS</option>
-<option value="BO. FELIPE LOPEZ">BO. FELIPE LOPEZ</option>
-<option value="BO. FRANCISCO ESTRADA">BO. FRANCISCO ESTRADA</option>
-<option value="BO. GENIZARO">BO. GENIZARO</option>
-<option value="BO. GERMAN POMARES">BO. GERMAN POMARES</option>
-<option value="BO. GUADALUPE">BO. GUADALUPE</option>
-<option value="BO. HUMBERTO LOPEZ">BO. HUMBERTO LOPEZ</option>
-<option value="BO. JULIO BUITRAGO">BO. JULIO BUITRAGO</option>
-<option value="BO. LA PALMA">BO. LA PALMA</option>
-<option value="BO. LIBERTAD(CHINANDEGA)">BO. LIBERTAD(CHINANDEGA)</option>
-<option value="BO. LOMAS DE SN. NICOLAS">BO. LOMAS DE SN. NICOLAS</option>
-<option value="BO. LOS ANGELES">BO. LOS ANGELES</option>
-<option value="BO. LUIS ANTONIO OJEDA">BO. LUIS ANTONIO OJEDA</option>
-<option value="BO. LUIS DE LA LLANA">BO. LUIS DE LA LLANA</option>
-<option value="BO. MANUEL VELAZQUEZ">BO. MANUEL VELAZQUEZ</option>
-<option value="BO. MARIA ELENA MARTINEZ">BO. MARIA ELENA MARTINEZ</option>
-<option value="BO. MARITZA LOPEZ">BO. MARITZA LOPEZ</option>
-<option value="BO. NVO. CHORIZO(CORINTO)">BO. NVO. CHORIZO(CORINTO)</option>
-<option value="BO. ORLANDO CACERES">BO. ORLANDO CACERES</option>
-<option value="BO. PANCASAN">BO. PANCASAN</option>
-<option value="BO. PANTANAL">BO. PANTANAL</option>
-<option value="BO. R. HERRERA(CHINANDE)">BO. R. HERRERA(CHINANDE)</option>
-<option value="BO. RAUL SALGADO">BO. RAUL SALGADO</option>
-<option value="BO. RENE LINARTE">BO. RENE LINARTE</option>
-<option value="BO. SAN JOSE">BO. SAN JOSE</option>
-<option value="BO. SAN JULIAN">BO. SAN JULIAN</option>
-<option value="BO. SAN MARTIN">BO. SAN MARTIN</option>
-<option value="BO. TOMAS BORGE">BO. TOMAS BORGE</option>
-<option value="BO. ZARAGOSA">BO. ZARAGOSA</option>
-<option value="BO.LA PARROQUIA">BO.LA PARROQUIA</option>
-<option value="BO.VALENCIA">BO.VALENCIA</option>
-<option value="BOCA DE CANTARO">BOCA DE CANTARO</option>
-<option value="BOSQUE SUR">BOSQUE SUR</option>
-<option value="BRENES, D. ROJAS(CORINTO)">BRENES, D. ROJAS(CORINTO)</option>
-<option value="BRISA DE ACOSASCO(LEON)">BRISA DE ACOSASCO(LEON)</option>
-<option value="BRISAS DEL MAR">BRISAS DEL MAR</option>
-<option value="BRISAS DEL POCHOTE">BRISAS DEL POCHOTE</option>
-<option value="BUENA ESPERANZA">BUENA ESPERANZA</option>
-<option value="BUENOS AIRES">BUENOS AIRES</option>
-<option value="BY PASS">BY PASS</option>
-<option value="CABO DE HORNO">CABO DE HORNO</option>
-<option value="CACHORROS DE SANDINO">CACHORROS DE SANDINO</option>
-<option value="CALLE CENTRAL (CORINTO)">CALLE CENTRAL (CORINTO)</option>
-<option value="CALLE REAL EL BOSQUE">CALLE REAL EL BOSQUE</option>
-<option value="CALVARIO(CHINANDEGA)">CALVARIO(CHINANDEGA)</option>
-<option value="CAMILO ORTEGA">CAMILO ORTEGA</option>
-<option value="CAMILO ORTEGA(CORINTO)">CAMILO ORTEGA(CORINTO)</option>
-<option value="CAMINO DE JESUS">CAMINO DE JESUS</option>
-<option value="CAMPANA AZUL">CAMPANA AZUL</option>
-<option value="CANDELARIA">CANDELARIA</option>
-<option value="CARLOS FONSECA">CARLOS FONSECA</option>
-<option value="CARLOS FONSECA N: 1">CARLOS FONSECA N: 1</option>
-<option value="CARLOS FONSECA N: 2">CARLOS FONSECA N: 2</option>
-<option value="CARLOS FONSECA(CHINAND)">CARLOS FONSECA(CHINAND)</option>
-<option value="CARLOS HUETE">CARLOS HUETE</option>
-<option value="CARLOS MANZANARES">CARLOS MANZANARES</option>
-<option value="CAROLINA SANTANA">CAROLINA SANTANA</option>
-<option value="CARR SALINAS GDE">CARR SALINAS GDE</option>
-<option value="CARR. A PONELOYA(LEON)">CARR. A PONELOYA(LEON)</option>
-<option value="CARR. CHINANDEGA-CORINTO">CARR. CHINANDEGA-CORINTO</option>
-<option value="CARR. COSIGUINA POTOSI">CARR. COSIGUINA POTOSI</option>
-<option value="CARR. LEON TELICA">CARR. LEON TELICA</option>
-<option value="CARR. LEON-MGUA(LEON)">CARR. LEON-MGUA(LEON)</option>
-<option value="CARR. QUEZALG - CHINDGA">CARR. QUEZALG - CHINDGA</option>
-<option value="CARR. SAUCE-RIO GRANDE">CARR. SAUCE-RIO GRANDE</option>
-<option value="CARR. SAUCE-VILLANUEVA">CARR. SAUCE-VILLANUEVA</option>
-<option value="CARR. TELICA - SN. ISIDRO">CARR. TELICA - SN. ISIDRO</option>
-<option value="CARR. TELICA-LEON">CARR. TELICA-LEON</option>
-<option value="CARRET NVA LEON (C.SANDI)">CARRET NVA LEON (C.SANDI)</option>
-<option value="CARRETA QUEMADA">CARRETA QUEMADA</option>
-<option value="CARRETERA A LEON">CARRETERA A LEON</option>
-<option value="CARRETERA CORINTO">CARRETERA CORINTO</option>
-<option value="CASA BLANCA">CASA BLANCA</option>
-<option value="CASERIO SAN MIGUELITO">CASERIO SAN MIGUELITO</option>
-<option value="CASTELEON">CASTELEON</option>
-<option value="CAYANLIPE">CAYANLIPE</option>
-<option value="CAYANLIPE BONETE">CAYANLIPE BONETE</option>
-<option value="CAÃ‘A BRAVA">CAÃ‘A BRAVA</option>
-<option value="CAÃ‘AFISTOLA">CAÃ‘AFISTOLA</option>
-<option value="CEIBA (LA FUENTE)">CEIBA (LA FUENTE)</option>
-<option value="CEIBA ERRADA">CEIBA ERRADA</option>
-<option value="CEIBA-ARROCERA(LEON)">CEIBA-ARROCERA(LEON)</option>
-<option value="CERRO COLORADO">CERRO COLORADO</option>
-<option value="CERRO DE HULE">CERRO DE HULE</option>
-<option value="CERRO EL GALLO">CERRO EL GALLO</option>
-<option value="CHARCO DE LOS BUEYES">CHARCO DE LOS BUEYES</option>
-<option value="CHE GUEVARA">CHE GUEVARA</option>
-<option value="CHIMALTEPE">CHIMALTEPE</option>
-<option value="CHINANDEGA(CHINANDEGA)">CHINANDEGA(CHINANDEGA)</option>
-<option value="CHORRERA">CHORRERA</option>
-<option value="CINCO PINOS RURAL">CINCO PINOS RURAL</option>
-<option value="CINCO PINOS(CHINANDEGA)">CINCO PINOS(CHINANDEGA)</option>
-<option value="CIUDADELA SALINAS GDE.">CIUDADELA SALINAS GDE.</option>
-<option value="CLAUDIO BONETI">CLAUDIO BONETI</option>
-<option value="CLUB LEONES">CLUB LEONES</option>
-<option value="CLUB ROTARIO">CLUB ROTARIO</option>
-<option value="CMCA LOS ZANJONES">CMCA LOS ZANJONES</option>
-<option value="CMCA SAN PEDRO">CMCA SAN PEDRO</option>
-<option value="CMCA.FILIBERTO MORALES">CMCA.FILIBERTO MORALES</option>
-<option value="COFRADIA">COFRADIA</option>
-<option value="COL. EL MAESTRO">COL. EL MAESTRO</option>
-<option value="COL. EVERT MENDOZA">COL. EVERT MENDOZA</option>
-<option value="COL. INVI APATLAN(CORINTO)">COL. INVI APATLAN(CORINTO)</option>
-<option value="COL. OVIEDO(EL VIEJO)">COL. OVIEDO(EL VIEJO)</option>
-<option value="COL.19 DE JULIO">COL.19 DE JULIO</option>
-<option value="COL.BANANERA">COL.BANANERA</option>
-<option value="COL.MARIO CARI.">COL.MARIO CARI.</option>
-<option value="COL.MIGUEL JAR.">COL.MIGUEL JAR.</option>
-<option value="COL.NARCISO ZE.">COL.NARCISO ZE.</option>
-<option value="COLON GERMAN P.(EL VIEJO)">COLON GERMAN P.(EL VIEJO)</option>
-<option value="COLON GERMAN POMARES">COLON GERMAN POMARES</option>
-<option value="COLONIA ESPAÃ‘A">COLONIA ESPAÃ‘A</option>
-<option value="COLONIA EUGENIO PEREZ">COLONIA EUGENIO PEREZ</option>
-<option value="COLONIA GRACSA">COLONIA GRACSA</option>
-<option value="COLONIA GRACSA(CHINANDEGA)">COLONIA GRACSA(CHINANDEGA)</option>
-<option value="COLONIA ISRAEL">COLONIA ISRAEL</option>
-<option value="COLONIA MERCEDES VARELA">COLONIA MERCEDES VARELA</option>
-<option value="COLONIA SANTA ISABEL">COLONIA SANTA ISABEL</option>
-<option value="COLONIA UNIVERSIDAD">COLONIA UNIVERSIDAD</option>
-<option value="COM EL BARRO">COM EL BARRO</option>
-<option value="COM LAS LOMAS">COM LAS LOMAS</option>
-<option value="COM LOS PINOS">COM LOS PINOS</option>
-<option value="COM. CEIBA CHACHAGUA">COM. CEIBA CHACHAGUA</option>
-<option value="COM. CHACARASECA">COM. CHACARASECA</option>
-<option value="COM. CRISTINA">COM. CRISTINA</option>
-<option value="COM. EL CAMBIO">COM. EL CAMBIO</option>
-<option value="COM. EL PAPALONAL">COM. EL PAPALONAL</option>
-<option value="COM. EL TERRERO">COM. EL TERRERO</option>
-<option value="COM. EL TOLOLAR">COM. EL TOLOLAR</option>
-<option value="COM. GRACIAS A DIOS">COM. GRACIAS A DIOS</option>
-<option value="COM. LA CONCHA">COM. LA CONCHA</option>
-<option value="COM. LA DEFENSA">COM. LA DEFENSA</option>
-<option value="COM. LA SABANETA">COM. LA SABANETA</option>
-<option value="COM. LA VIRGEN">COM. LA VIRGEN</option>
-<option value="COM. LAS CHACARAS">COM. LAS CHACARAS</option>
-<option value="COM. LAS MARIAS">COM. LAS MARIAS</option>
-<option value="COM. LOS ARCOS">COM. LOS ARCOS</option>
-<option value="COM. LOS CARAOS">COM. LOS CARAOS</option>
-<option value="COM. LOS GUASIMOS">COM. LOS GUASIMOS</option>
-<option value="COM. LOS PORTILLOS">COM. LOS PORTILLOS</option>
-<option value="COM. LOS POZOS">COM. LOS POZOS</option>
-<option value="COM. MONTECRISTO">COM. MONTECRISTO</option>
-<option value="COM. PALACIO(TONALA)">COM. PALACIO(TONALA)</option>
-<option value="COM. PALO DE LAPA">COM. PALO DE LAPA</option>
-<option value="COM. PUEBLO REDONDO">COM. PUEBLO REDONDO</option>
-<option value="COM. QUIMERA">COM. QUIMERA</option>
-<option value="COM. SANTA EMILIA">COM. SANTA EMILIA</option>
-<option value="COM. SOCORRO">COM. SOCORRO</option>
-<option value="COM. TRABUCO">COM. TRABUCO</option>
-<option value="COM. WISQUILI">COM. WISQUILI</option>
-<option value="COM.EL ALMENDRO">COM.EL ALMENDRO</option>
-<option value="COM.SAGRADO C JESUS">COM.SAGRADO C JESUS</option>
-<option value="COMARCA 10-14">COMARCA 10-14</option>
-<option value="COMARCA 10-14(CHINANDEGA">COMARCA 10-14(CHINANDEGA</option>
-<option value="COMARCA BOQUERON">COMARCA BOQUERON</option>
-<option value="COMARCA GUANACASTAL">COMARCA GUANACASTAL</option>
-<option value="COMARCA LA ESTACION">COMARCA LA ESTACION</option>
-<option value="COMARCA PACIENTE">COMARCA PACIENTE</option>
-<option value="COMARCA PALACIOS">COMARCA PALACIOS</option>
-<option value="COMARCA POSOLTEGUILLA">COMARCA POSOLTEGUILLA</option>
-<option value="COMARCA PUNTA ARENA">COMARCA PUNTA ARENA</option>
-<option value="COMARCA TOLOLAR">COMARCA TOLOLAR</option>
-<option value="COMARCA TROILO">COMARCA TROILO</option>
-<option value="COMUNIDAD SAN LUIS">COMUNIDAD SAN LUIS</option>
-<option value="CONCEPCION DE MARIA">CONCEPCION DE MARIA</option>
-<option value="CONCEPCION(CHICHIGALPA)">CONCEPCION(CHICHIGALPA)</option>
-<option value="COOP. OMAR TORRIJOS">COOP. OMAR TORRIJOS</option>
-<option value="COOPERATIVA EL ROSARIO">COOPERATIVA EL ROSARIO</option>
-<option value="CORAZON DE JESUS">CORAZON DE JESUS</option>
-<option value="CORRAL FALSO">CORRAL FALSO</option>
-<option value="CORRE VIENTOS">CORRE VIENTOS</option>
-<option value="COSIGUINA">COSIGUINA</option>
-<option value="COSMAPA">COSMAPA</option>
-<option value="COST. RECOLECCION(LEON)">COST. RECOLECCION(LEON)</option>
-<option value="COVISUBA">COVISUBA</option>
-<option value="COYOLITO">COYOLITO</option>
-<option value="CRISTO REY">CRISTO REY</option>
-<option value="CUATRO ESQUINAS">CUATRO ESQUINAS</option>
-<option value="CUATRO PALOS">CUATRO PALOS</option>
-<option value="CUCHILLA SAN CARLOS">CUCHILLA SAN CARLOS</option>
-<option value="DAVID ANDINO(CHINANDEGA)">DAVID ANDINO(CHINANDEGA)</option>
-<option value="DAVILA BOLAQOS">DAVILA BOLAQOS</option>
-<option value="DESARR. COMUNIT(CHINANDE">DESARR. COMUNIT(CHINANDE</option>
-<option value="DIVINA MISERICORDIA">DIVINA MISERICORDIA</option>
-<option value="DIVINO NIÃ‘O">DIVINO NIÃ‘O</option>
-<option value="DIVINO NIÃ‘O (SALINAS GRANDES)">DIVINO NIÃ‘O (SALINAS GRANDES)</option>
-<option value="DULCE NOMBRE DE JESUS">DULCE NOMBRE DE JESUS</option>
-<option value="EL APANTE">EL APANTE</option>
-<option value="EL ARENAL">EL ARENAL</option>
-<option value="EL ASTILLERO">EL ASTILLERO</option>
-<option value="EL BARRO">EL BARRO</option>
-<option value="EL BEJUCO">EL BEJUCO</option>
-<option value="EL BORBOLLON">EL BORBOLLON</option>
-<option value="EL BRAMADERO(CHE GUEVARA)">EL BRAMADERO(CHE GUEVARA)</option>
-<option value="EL CACAO">EL CACAO</option>
-<option value="EL CAIMITO">EL CAIMITO</option>
-<option value="EL CALVARIO (LEON)">EL CALVARIO (LEON)</option>
-<option value="EL CALVARITO">EL CALVARITO</option>
-<option value="EL CAMPAMENTO">EL CAMPAMENTO</option>
-<option value="EL CAPULIN">EL CAPULIN</option>
-<option value="EL CARACOL">EL CARACOL</option>
-<option value="EL CARRIZAL">EL CARRIZAL</option>
-<option value="EL CARRIZO">EL CARRIZO</option>
-<option value="EL CERRO">EL CERRO</option>
-<option value="EL CHAGUE">EL CHAGUE</option>
-<option value="EL CHAPARRAL">EL CHAPARRAL</option>
-<option value="EL CHONCO">EL CHONCO</option>
-<option value="EL CHORIZO">EL CHORIZO</option>
-<option value="EL CHORRO">EL CHORRO</option>
-<option value="EL CHUCARO">EL CHUCARO</option>
-<option value="EL CONGO">EL CONGO</option>
-<option value="EL CONSUELO">EL CONSUELO</option>
-<option value="EL COYOLAR (LEON)">EL COYOLAR (LEON)</option>
-<option value="EL DANTO">EL DANTO</option>
-<option value="EL ESPAVEL">EL ESPAVEL</option>
-<option value="EL ESPINAL">EL ESPINAL</option>
-<option value="EL ESPINO">EL ESPINO</option>
-<option value="EL GENIZARO">EL GENIZARO</option>
-<option value="EL GUACIMAL">EL GUACIMAL</option>
-<option value="EL GUANACASTE">EL GUANACASTE</option>
-<option value="EL GUARUMA">EL GUARUMA</option>
-<option value="EL GUASAULE">EL GUASAULE</option>
-<option value="EL GUAYABO">EL GUAYABO</option>
-<option value="EL HATILLO">EL HATILLO</option>
-<option value="EL HIGO">EL HIGO</option>
-<option value="EL HIGUERAL">EL HIGUERAL</option>
-<option value="EL HUGUTU">EL HUGUTU</option>
-<option value="EL JARRO">EL JARRO</option>
-<option value="EL JICARAL (LEON)">EL JICARAL (LEON)</option>
-<option value="EL JICARITO">EL JICARITO</option>
-<option value="EL JICARO">EL JICARO</option>
-<option value="EL JICOTE">EL JICOTE</option>
-<option value="EL LAJERO">EL LAJERO</option>
-<option value="EL LIMONAL">EL LIMONAL</option>
-<option value="EL LLANO">EL LLANO</option>
-<option value="EL LLANO DEL OCOTAL">EL LLANO DEL OCOTAL</option>
-<option value="EL MADROÃ‘O">EL MADROÃ‘O</option>
-<option value="EL MANGUITO">EL MANGUITO</option>
-<option value="EL MANZANO">EL MANZANO</option>
-<option value="EL MITCH">EL MITCH</option>
-<option value="EL MOJON">EL MOJON</option>
-<option value="EL NANCITAL # 2">EL NANCITAL # 2</option>
-<option value="EL NARANJO">EL NARANJO</option>
-<option value="EL OBRAJE SOMOTILLO">EL OBRAJE SOMOTILLO</option>
-<option value="EL OBRAJE VILLANUEVA">EL OBRAJE VILLANUEVA</option>
-<option value="EL OJOCHAL">EL OJOCHAL</option>
-<option value="EL OJOCHE">EL OJOCHE</option>
-<option value="EL PAJARITO LAS BRISAS">EL PAJARITO LAS BRISAS</option>
-<option value="EL PAJUIL">EL PAJUIL</option>
-<option value="EL PANAL">EL PANAL</option>
-<option value="EL PAPALON">EL PAPALON</option>
-<option value="EL PARAGUA">EL PARAGUA</option>
-<option value="EL PARAISO">EL PARAISO</option>
-<option value="EL PARQUEO">EL PARQUEO</option>
-<option value="EL PASTAL">EL PASTAL</option>
-<option value="EL PASTORAL">EL PASTORAL</option>
-<option value="EL PAVON">EL PAVON</option>
-<option value="EL PEDREGAL">EL PEDREGAL</option>
-<option value="EL PELLISCO">EL PELLISCO</option>
-<option value="EL PELLISCO(CHINANDEGA)">EL PELLISCO(CHINANDEGA)</option>
-<option value="EL PETEN">EL PETEN</option>
-<option value="EL PILOTO">EL PILOTO</option>
-<option value="EL PIÃ‘UELAR">EL PIÃ‘UELAR</option>
-<option value="EL PLATANAL(LEON)">EL PLATANAL(LEON)</option>
-<option value="EL PLAYON">EL PLAYON</option>
-<option value="EL PORVENIR">EL PORVENIR</option>
-<option value="EL PORVENIR(LEON)">EL PORVENIR(LEON)</option>
-<option value="EL PORVENIR(NAGAROTE)">EL PORVENIR(NAGAROTE)</option>
-<option value="EL PUMA">EL PUMA</option>
-<option value="EL RAIZAL">EL RAIZAL</option>
-<option value="EL RECREO">EL RECREO</option>
-<option value="EL RODEITO">EL RODEITO</option>
-<option value="EL ROSARIO">EL ROSARIO</option>
-<option value="EL SAGRARIO(LEON)">EL SAGRARIO(LEON)</option>
-<option value="EL SAUCE(LEON)">EL SAUCE(LEON)</option>
-<option value="EL TAMARINDO">EL TAMARINDO</option>
-<option value="EL TAMARINDO(LEON)">EL TAMARINDO(LEON)</option>
-<option value="EL TANQUE">EL TANQUE</option>
-<option value="EL TEMPISQUE">EL TEMPISQUE</option>
-<option value="EL TERRERO">EL TERRERO</option>
-<option value="EL TINTAL">EL TINTAL</option>
-<option value="EL TRAPICHITO">EL TRAPICHITO</option>
-<option value="EL TRIANON">EL TRIANON</option>
-<option value="EL TRIUNFO">EL TRIUNFO</option>
-<option value="EL VALLE">EL VALLE</option>
-<option value="EL VELERO">EL VELERO</option>
-<option value="EL VIEJO">EL VIEJO</option>
-<option value="EL VIEJO RURAL">EL VIEJO RURAL</option>
-<option value="EL ZACATON">EL ZACATON</option>
-<option value="EL ZAPOTAL">EL ZAPOTAL</option>
-<option value="EL ZAPOTE">EL ZAPOTE</option>
-<option value="EMIGDIA CATIN">EMIGDIA CATIN</option>
-<option value="EMIR CABEZAS">EMIR CABEZAS</option>
-<option value="ENMANUEL">ENMANUEL</option>
-<option value="ENRIQUE LOPEZ (LA PAZ CEN">ENRIQUE LOPEZ (LA PAZ CEN</option>
-<option value="ENTIMO ANDINO">ENTIMO ANDINO</option>
-<option value="ERASMO CUADRA">ERASMO CUADRA</option>
-<option value="ERICK RAMIREZ">ERICK RAMIREZ</option>
-<option value="ERMITA C.JESUS(NAGAROTE)">ERMITA C.JESUS(NAGAROTE)</option>
-<option value="ERMITA DOLORES(LEON)">ERMITA DOLORES(LEON)</option>
-<option value="ESQUIPULAS">ESQUIPULAS</option>
-<option value="EXBASE NAVAL">EXBASE NAVAL</option>
-<option value="FARALLONES">FARALLONES</option>
-<option value="FATIMA">FATIMA</option>
-<option value="FCA. SAN MAURICIO">FCA. SAN MAURICIO</option>
-<option value="FILADELFIA">FILADELFIA</option>
-<option value="FLOR DE ASALIA">FLOR DE ASALIA</option>
-<option value="FRANCISCO LAGUNA">FRANCISCO LAGUNA</option>
-<option value="FRANCISCO REYES">FRANCISCO REYES</option>
-<option value="FUDECI I ETAPA">FUDECI I ETAPA</option>
-<option value="FUDECI II ETAPA">FUDECI II ETAPA</option>
-<option value="FUNDECI">FUNDECI</option>
-<option value="GALILAO">GALILAO</option>
-<option value="GAMEZ">GAMEZ</option>
-<option value="GANCHO DE LA MONA">GANCHO DE LA MONA</option>
-<option value="GARROBO EMPINADO">GARROBO EMPINADO</option>
-<option value="GERARDO LINDO">GERARDO LINDO</option>
-<option value="GERICO">GERICO</option>
-<option value="GERMAN OMIER">GERMAN OMIER</option>
-<option value="GERMAN POMARES">GERMAN POMARES</option>
-<option value="GERMAN POMARES O.">GERMAN POMARES O.</option>
-<option value="GIÃ‘OCUAGO">GIÃ‘OCUAGO</option>
-<option value="GRACIAS A DIOS">GRACIAS A DIOS</option>
-<option value="GUACIMO">GUACIMO</option>
-<option value="GUACUCAL">GUACUCAL</option>
-<option value="GUADALUPE">GUADALUPE</option>
-<option value="GUADALUPE (CHINANDEGA)">GUADALUPE (CHINANDEGA)</option>
-<option value="GUANACASTAL">GUANACASTAL</option>
-<option value="GUANACASTILLO">GUANACASTILLO</option>
-<option value="GUAPANGO">GUAPANGO</option>
-<option value="GUAPINOL">GUAPINOL</option>
-<option value="GUASIMITO">GUASIMITO</option>
-<option value="GUAYABILLA ABAJO">GUAYABILLA ABAJO</option>
-<option value="GUAYABILLA ARRIBA">GUAYABILLA ARRIBA</option>
-<option value="HACIENDA LAS COLINAS(LA P">HACIENDA LAS COLINAS(LA P</option>
-<option value="HATO GRANDE">HATO GRANDE</option>
-<option value="HATO NUEVO">HATO NUEVO</option>
-<option value="HATO VIEJO">HATO VIEJO</option>
-<option value="HILTON MANZANARES">HILTON MANZANARES</option>
-<option value="HUGO CHAVEZ">HUGO CHAVEZ</option>
-<option value="HYM ZARAGOZA">HYM ZARAGOZA</option>
-<option value="IDANIA FERNANDEZ">IDANIA FERNANDEZ</option>
-<option value="INSS CRUZ ROJA(CORINTO)">INSS CRUZ ROJA(CORINTO)</option>
-<option value="ISLA DEL AMOR(CORINTO)">ISLA DEL AMOR(CORINTO)</option>
-<option value="ISMAEL CASTILLO">ISMAEL CASTILLO</option>
-<option value="IVAN VILCHEZ">IVAN VILCHEZ</option>
-<option value="JAIRO PEREZ (NAGAROTE)">JAIRO PEREZ (NAGAROTE)</option>
-<option value="JALISCO">JALISCO</option>
-<option value="JB CENTENO">JB CENTENO</option>
-<option value="JERONIMO LOPEZ(NAGAROTE">JERONIMO LOPEZ(NAGAROTE</option>
-<option value="JERUSALEN">JERUSALEN</option>
-<option value="JIMENEZ">JIMENEZ</option>
-<option value="JIQOCUAO">JIQOCUAO</option>
-<option value="JIQUILILLO">JIQUILILLO</option>
-<option value="JOCOMICO">JOCOMICO</option>
-<option value="JORGE BARRETO">JORGE BARRETO</option>
-<option value="JOSE BENITO CENTENO">JOSE BENITO CENTENO</option>
-<option value="JOSE BENITO ESCOBAR">JOSE BENITO ESCOBAR</option>
-<option value="JOSE BONILLA">JOSE BONILLA</option>
-<option value="JUAN  PEGUERO">JUAN  PEGUERO</option>
-<option value="JUAN JOSE BRICEQO">JUAN JOSE BRICEQO</option>
-<option value="JUAN XXIII">JUAN XXIII</option>
-<option value="JULIO A CANALES">JULIO A CANALES</option>
-<option value="JULIO CESAR TINOCO">JULIO CESAR TINOCO</option>
-<option value="KILAKA">KILAKA</option>
-<option value="LA BARRERA">LA BARRERA</option>
-<option value="LA BAYONA">LA BAYONA</option>
-<option value="LA BOLSA">LA BOLSA</option>
-<option value="LA BOLSA (CHINANDEGA)">LA BOLSA (CHINANDEGA)</option>
-<option value="LA BOMBILLA">LA BOMBILLA</option>
-<option value="LA CABRERA">LA CABRERA</option>
-<option value="LA CARBONERA">LA CARBONERA</option>
-<option value="LA CARRETA">LA CARRETA</option>
-<option value="LA CEIBA">LA CEIBA</option>
-<option value="LA CEIBA TROILO">LA CEIBA TROILO</option>
-<option value="LA CENICERA">LA CENICERA</option>
-<option value="LA CHILAMA">LA CHILAMA</option>
-<option value="LA COLONIA">LA COLONIA</option>
-<option value="LA CONCEPCION">LA CONCEPCION</option>
-<option value="LA CREADORA">LA CREADORA</option>
-<option value="LA CRUZ">LA CRUZ</option>
-<option value="LA CURVA">LA CURVA</option>
-<option value="LA DANTA">LA DANTA</option>
-<option value="LA ESPERANZA">LA ESPERANZA</option>
-<option value="LA FLOR">LA FLOR</option>
-<option value="LA FLORIDA">LA FLORIDA</option>
-<option value="LA FRAGOSA">LA FRAGOSA</option>
-<option value="LA FRAGUA">LA FRAGUA</option>
-<option value="LA FUENTE">LA FUENTE</option>
-<option value="LA GALLINA">LA GALLINA</option>
-<option value="LA GLORIA">LA GLORIA</option>
-<option value="LA GRECIA(CHINANDEGA)">LA GRECIA(CHINANDEGA)</option>
-<option value="LA HISTORICA">LA HISTORICA</option>
-<option value="LA HOLLADA">LA HOLLADA</option>
-<option value="LA HONDA">LA HONDA</option>
-<option value="LA HORQUETA">LA HORQUETA</option>
-<option value="LA JOLOTA">LA JOLOTA</option>
-<option value="LA JOYA">LA JOYA</option>
-<option value="LA LAGUNA">LA LAGUNA</option>
-<option value="LA LAGUNETA">LA LAGUNETA</option>
-<option value="LA LECHUZA">LA LECHUZA</option>
-<option value="LA LEONA">LA LEONA</option>
-<option value="LA LIBERTAD">LA LIBERTAD</option>
-<option value="LA MERCED">LA MERCED</option>
-<option value="LA MONTAÃ‘ITA">LA MONTAÃ‘ITA</option>
-<option value="LA MONTAÃ‘ITA(EL JICARAL)">LA MONTAÃ‘ITA(EL JICARAL)</option>
-<option value="LA MORA">LA MORA</option>
-<option value="LA MORITA">LA MORITA</option>
-<option value="LA PAKAIRA">LA PAKAIRA</option>
-<option value="LA PALMA">LA PALMA</option>
-<option value="LA PALMITA">LA PALMITA</option>
-<option value="LA PARROQUIA">LA PARROQUIA</option>
-<option value="LA PARROQUIA(CHICHIGALPA)">LA PARROQUIA(CHICHIGALPA)</option>
-<option value="LA PARROQUIA(POSOLTEGA)">LA PARROQUIA(POSOLTEGA)</option>
-<option value="LA PAVANA">LA PAVANA</option>
-<option value="LA PAZ CENTRO(LEON)">LA PAZ CENTRO(LEON)</option>
-<option value="LA PAZ DE CRISTO">LA PAZ DE CRISTO</option>
-<option value="LA PAZ VIEJA">LA PAZ VIEJA</option>
-<option value="LA PEDRERA">LA PEDRERA</option>
-<option value="LA PEINETA">LA PEINETA</option>
-<option value="LA PERLA">LA PERLA</option>
-<option value="LA PICOTA">LA PICOTA</option>
-<option value="LA PINTORA">LA PINTORA</option>
-<option value="LA PITA">LA PITA</option>
-<option value="LA REFORMA">LA REFORMA</option>
-<option value="LA RESISTENCIA">LA RESISTENCIA</option>
-<option value="LA RINCONADA">LA RINCONADA</option>
-<option value="LA SABANA">LA SABANA</option>
-<option value="LA SABANETA">LA SABANETA</option>
-<option value="LA SIRENA">LA SIRENA</option>
-<option value="LA TEJANA">LA TEJANA</option>
-<option value="LA TIGUILOTADA">LA TIGUILOTADA</option>
-<option value="LA UNIDAD">LA UNIDAD</option>
-<option value="LA UNION">LA UNION</option>
-<option value="LA UVA">LA UVA</option>
-<option value="LA VINAGRERA">LA VINAGRERA</option>
-<option value="LA VIRGEN">LA VIRGEN</option>
-<option value="LA VIRGEN DEL CAMINO">LA VIRGEN DEL CAMINO</option>
-<option value="LABORIO">LABORIO</option>
-<option value="LARGATILLO">LARGATILLO</option>
-<option value="LARREYNAGA(LEON)">LARREYNAGA(LEON)</option>
-<option value="LAS BRISAS">LAS BRISAS</option>
-<option value="LAS CALDERAS">LAS CALDERAS</option>
-<option value="LAS CALERAS">LAS CALERAS</option>
-<option value="LAS CALERAS JIÃ‘OCUAO">LAS CALERAS JIÃ‘OCUAO</option>
-<option value="LAS CHACARAS">LAS CHACARAS</option>
-<option value="LAS CHACHAGUAS">LAS CHACHAGUAS</option>
-<option value="LAS COLINAS">LAS COLINAS</option>
-<option value="LAS ENRAMADAS">LAS ENRAMADAS</option>
-<option value="LAS GRIETAS(CHINANDEGA)">LAS GRIETAS(CHINANDEGA)</option>
-<option value="LAS JAGUAS">LAS JAGUAS</option>
-<option value="LAS LAJAS">LAS LAJAS</option>
-<option value="LAS LIMAS">LAS LIMAS</option>
-<option value="LAS LIRAS">LAS LIRAS</option>
-<option value="LAS LOMAS">LAS LOMAS</option>
-<option value="LAS MANCORNADAS">LAS MANCORNADAS</option>
-<option value="LAS MARIAS">LAS MARIAS</option>
-<option value="LAS MARIITAS">LAS MARIITAS</option>
-<option value="LAS MERCEDES">LAS MERCEDES</option>
-<option value="LAS MERCEDES(CHICHIGALP)">LAS MERCEDES(CHICHIGALP)</option>
-<option value="LAS MERCEDITAS">LAS MERCEDITAS</option>
-<option value="LAS MESITAS">LAS MESITAS</option>
-<option value="LAS MOJARRAS">LAS MOJARRAS</option>
-<option value="LAS MULAS">LAS MULAS</option>
-<option value="LAS NOVENTA">LAS NOVENTA</option>
-<option value="LAS NUBES">LAS NUBES</option>
-<option value="LAS PALANCAS">LAS PALANCAS</option>
-<option value="LAS PALMAS">LAS PALMAS</option>
-<option value="LAS PALMERAS CHICHIGALP">LAS PALMERAS CHICHIGALP</option>
-<option value="LAS PARCELAS">LAS PARCELAS</option>
-<option value="LAS PEÃ‘ITAS(LEON)">LAS PEÃ‘ITAS(LEON)</option>
-<option value="LAS PILAS">LAS PILAS</option>
-<option value="LAS PILAS(S.C)">LAS PILAS(S.C)</option>
-<option value="LAS POZAS">LAS POZAS</option>
-<option value="LAS QUEMADAS">LAS QUEMADAS</option>
-<option value="LAS RASTRA">LAS RASTRA</option>
-<option value="LAS TABLAS">LAS TABLAS</option>
-<option value="LAS TROZAS">LAS TROZAS</option>
-<option value="LAS VEINTES">LAS VEINTES</option>
-<option value="LECHECUAGO(LEON)">LECHECUAGO(LEON)</option>
-<option value="LEON(LEON)">LEON(LEON)</option>
-<option value="LIBORNIA">LIBORNIA</option>
-<option value="LINDA VISTA">LINDA VISTA</option>
-<option value="LINO ARGUELLO">LINO ARGUELLO</option>
-<option value="LOMAS BETANIA(LA PAZ CEN)">LOMAS BETANIA(LA PAZ CEN)</option>
-<option value="LOS ACHIOTES">LOS ACHIOTES</option>
-<option value="LOS ALMENDROS">LOS ALMENDROS</option>
-<option value="LOS ANGELES">LOS ANGELES</option>
-<option value="LOS ANGELES  URBANO">LOS ANGELES  URBANO</option>
-<option value="LOS ARADITOS">LOS ARADITOS</option>
-<option value="LOS ARCOS">LOS ARCOS</option>
-<option value="LOS BALCONES">LOS BALCONES</option>
-<option value="LOS BRIONES">LOS BRIONES</option>
-<option value="LOS CALEROS">LOS CALEROS</option>
-<option value="LOS CAMARONES">LOS CAMARONES</option>
-<option value="LOS CERRITOS">LOS CERRITOS</option>
-<option value="LOS CHAVEZ">LOS CHAVEZ</option>
-<option value="LOS CHEROS">LOS CHEROS</option>
-<option value="LOS COCOS">LOS COCOS</option>
-<option value="LOS CORRALITOS">LOS CORRALITOS</option>
-<option value="LOS EBANOS">LOS EBANOS</option>
-<option value="LOS ENCUENTROS">LOS ENCUENTROS</option>
-<option value="LOS GARCIA">LOS GARCIA</option>
-<option value="LOS GEMELOS">LOS GEMELOS</option>
-<option value="LOS GUERREROS">LOS GUERREROS</option>
-<option value="LOS JARDINEZ">LOS JARDINEZ</option>
-<option value="LOS JOVITOS">LOS JOVITOS</option>
-<option value="LOS LAURELES">LOS LAURELES</option>
-<option value="LOS LECHESCUAGOS">LOS LECHESCUAGOS</option>
-<option value="LOS LIMONES">LOS LIMONES</option>
-<option value="LOS LLANITOS">LOS LLANITOS</option>
-<option value="LOS LOROS">LOS LOROS</option>
-<option value="LOS MADEROS">LOS MADEROS</option>
-<option value="LOS MANGLES">LOS MANGLES</option>
-<option value="LOS MEDINA">LOS MEDINA</option>
-<option value="LOS MILLONARIOS">LOS MILLONARIOS</option>
-<option value="LOS MILLONARIOS(CHINANDE">LOS MILLONARIOS(CHINANDE</option>
-<option value="LOS MOJONES">LOS MOJONES</option>
-<option value="LOS MONTOYA">LOS MONTOYA</option>
-<option value="LOS OJEDAS">LOS OJEDAS</option>
-<option value="LOS PANALES">LOS PANALES</option>
-<option value="LOS PANIQUINES">LOS PANIQUINES</option>
-<option value="LOS PATOS">LOS PATOS</option>
-<option value="LOS PAVONES">LOS PAVONES</option>
-<option value="LOS PEREZ">LOS PEREZ</option>
-<option value="LOS PLANSITOS">LOS PLANSITOS</option>
-<option value="LOS POCITOS">LOS POCITOS</option>
-<option value="LOS POSITOS">LOS POSITOS</option>
-<option value="LOS RAMIREZ">LOS RAMIREZ</option>
-<option value="LOS RANCHOS">LOS RANCHOS</option>
-<option value="LOS REMEDIOS">LOS REMEDIOS</option>
-<option value="LOS ROBLES">LOS ROBLES</option>
-<option value="LOS ROCHA">LOS ROCHA</option>
-<option value="LOS SALGADOS">LOS SALGADOS</option>
-<option value="LOS SANDOVAL">LOS SANDOVAL</option>
-<option value="LOS SANJONES">LOS SANJONES</option>
-<option value="LOS TABLONES">LOS TABLONES</option>
-<option value="LOS TERREROS">LOS TERREROS</option>
-<option value="LOS TOLOLOS">LOS TOLOLOS</option>
-<option value="LOS TORRES">LOS TORRES</option>
-<option value="LOS VALIENTES">LOS VALIENTES</option>
-<option value="LOS VELAZQUEZ">LOS VELAZQUEZ</option>
-<option value="LOS ZARZALES">LOS ZARZALES</option>
-<option value="LOURDES">LOURDES</option>
-<option value="LUCRECIA LINDO">LUCRECIA LINDO</option>
-<option value="LUIS ANDURAY">LUIS ANDURAY</option>
-<option value="M. PALACIOS(NAGAROTE)">M. PALACIOS(NAGAROTE)</option>
-<option value="MADERAS NEGRAS">MADERAS NEGRAS</option>
-<option value="MADRE TERESA DE CALCUTA">MADRE TERESA DE CALCUTA</option>
-<option value="MALPAISILLO(LEON)">MALPAISILLO(LEON)</option>
-<option value="MANAGUITA">MANAGUITA</option>
-<option value="MARAÃ‘ONAL">MARAÃ‘ONAL</option>
-<option value="MARCIO HERNANDEZ(LEON)">MARCIO HERNANDEZ(LEON)</option>
-<option value="MARCOS MEDINA">MARCOS MEDINA</option>
-<option value="MARIANA SAMPSON">MARIANA SAMPSON</option>
-<option value="MARIAS GRANDES">MARIAS GRANDES</option>
-<option value="MARIMBERO (SOMOTILLO)">MARIMBERO (SOMOTILLO)</option>
-<option value="MARIO COREA">MARIO COREA</option>
-<option value="MARIO QUANT">MARIO QUANT</option>
-<option value="MARVIN MELENDEZ">MARVIN MELENDEZ</option>
-<option value="MARVIN SALAZAR">MARVIN SALAZAR</option>
-<option value="MATA CAÃ‘A">MATA CAÃ‘A</option>
-<option value="MAYOCUNDA">MAYOCUNDA</option>
-<option value="MECHAPA">MECHAPA</option>
-<option value="MERCADO(CORINTO)">MERCADO(CORINTO)</option>
-<option value="MERCEDES CENTRO">MERCEDES CENTRO</option>
-<option value="MIGUEL ANGEL ORTEZ">MIGUEL ANGEL ORTEZ</option>
-<option value="MILAGRO DE DIOS">MILAGRO DE DIOS</option>
-<option value="MINA EL LIMON(LEON)">MINA EL LIMON(LEON)</option>
-<option value="MIRAMAR">MIRAMAR</option>
-<option value="MODESTO PALMA(CHICHIGAL">MODESTO PALMA(CHICHIGAL</option>
-<option value="MOJON SUR">MOJON SUR</option>
-<option value="MOJONES DE POSOLTEGA">MOJONES DE POSOLTEGA</option>
-<option value="MOKORON(CHINANDEGA)">MOKORON(CHINANDEGA)</option>
-<option value="MONTE BELLO">MONTE BELLO</option>
-<option value="MONTE DE LOS OLIVOS">MONTE DE LOS OLIVOS</option>
-<option value="MONTE HOREB">MONTE HOREB</option>
-<option value="MONTE OSCURO">MONTE OSCURO</option>
-<option value="MONTE REDONDO">MONTE REDONDO</option>
-<option value="MONTE ROSA">MONTE ROSA</option>
-<option value="MONTE SINAI">MONTE SINAI</option>
-<option value="MOSERRAT(CHINANDEGA)">MOSERRAT(CHINANDEGA)</option>
-<option value="NACASCOLO">NACASCOLO</option>
-<option value="NAGAROTE(LEON)">NAGAROTE(LEON)</option>
-<option value="NAGUALAPA">NAGUALAPA</option>
-<option value="NARCISO SALAZAR">NARCISO SALAZAR</option>
-<option value="NIDIA ESPINALES">NIDIA ESPINALES</option>
-<option value="NO UTILIZAR">NO UTILIZAR</option>
-<option value="NO UTILIZARLA">NO UTILIZARLA</option>
-<option value="NUEVA SALVACION">NUEVA SALVACION</option>
-<option value="NUEVA SOLEDAD">NUEVA SOLEDAD</option>
-<option value="NUEVO AMANECER">NUEVO AMANECER</option>
-<option value="NUEVO AMANECER III ETAPA">NUEVO AMANECER III ETAPA</option>
-<option value="NUEVO DIA">NUEVO DIA</option>
-<option value="NUEVO HORIZONTE">NUEVO HORIZONTE</option>
-<option value="NUEVO MOCORON">NUEVO MOCORON</option>
-<option value="NVO BELEN">NVO BELEN</option>
-<option value="OBRAJE SUR">OBRAJE SUR</option>
-<option value="OJO DE AGUA">OJO DE AGUA</option>
-<option value="OJOCHAL">OJOCHAL</option>
-<option value="OMAR TORRIJOS(CORINTO)">OMAR TORRIJOS(CORINTO)</option>
-<option value="ORLANDO CACERES(NAGART">ORLANDO CACERES(NAGART</option>
-<option value="ORO VERDE">ORO VERDE</option>
-<option value="OSCAR PEREZ CASSAR">OSCAR PEREZ CASSAR</option>
-<option value="PALERMO">PALERMO</option>
-<option value="PALESTINA">PALESTINA</option>
-<option value="PALO GRANDE">PALO GRANDE</option>
-<option value="PALO GRANDE(VILLANUEVA)">PALO GRANDE(VILLANUEVA)</option>
-<option value="PANCASAN">PANCASAN</option>
-<option value="PANCASAN(NAGOROTE)">PANCASAN(NAGOROTE)</option>
-<option value="PAPALONAL(LEON)">PAPALONAL(LEON)</option>
-<option value="PARET DEL VALLET">PARET DEL VALLET</option>
-<option value="PASO BENITO">PASO BENITO</option>
-<option value="PASO DE LAJA">PASO DE LAJA</option>
-<option value="PASO HONDO">PASO HONDO</option>
-<option value="PASOCABALLOS">PASOCABALLOS</option>
-<option value="PASOCABALLOS(CORINTO)">PASOCABALLOS(CORINTO)</option>
-<option value="PAZ ALI">PAZ ALI</option>
-<option value="PAZ VILLAGE">PAZ VILLAGE</option>
-<option value="PAZ Y RECONCILIACION">PAZ Y RECONCILIACION</option>
-<option value="PEDRO ARAUZ">PEDRO ARAUZ</option>
-<option value="PEDRO PABLO MARTINEZ">PEDRO PABLO MARTINEZ</option>
-<option value="PEDROJCHAMORRO (CHINAN)">PEDROJCHAMORRO (CHINAN)</option>
-<option value="PETACALTEPE">PETACALTEPE</option>
-<option value="PETAQUILLA">PETAQUILLA</option>
-<option value="PIEDRA QUEMADA">PIEDRA QUEMADA</option>
-<option value="PINTADIYAL">PINTADIYAL</option>
-<option value="PLAN NICARAGUA">PLAN NICARAGUA</option>
-<option value="PLANTA NICARAGUA">PLANTA NICARAGUA</option>
-<option value="PLATANAL">PLATANAL</option>
-<option value="PLAYA HERMOSA">PLAYA HERMOSA</option>
-<option value="PLAYA HERMOSA(NAGAROTE)">PLAYA HERMOSA(NAGAROTE)</option>
-<option value="PLAYONES DE CATARINA">PLAYONES DE CATARINA</option>
-<option value="POBLADO MORAZAN">POBLADO MORAZAN</option>
-<option value="PONELOYA(LEON)">PONELOYA(LEON)</option>
-<option value="PORTOBANCO">PORTOBANCO</option>
-<option value="PORVENIR(NAGORETE)">PORVENIR(NAGORETE)</option>
-<option value="POSADA DE SOL (LEON)">POSADA DE SOL (LEON)</option>
-<option value="POSOLTEGA">POSOLTEGA</option>
-<option value="POSOLTEGA RURAL">POSOLTEGA RURAL</option>
-<option value="POTOSI(EL VIEJO)">POTOSI(EL VIEJO)</option>
-<option value="POZA AZUL">POZA AZUL</option>
-<option value="POZO DE LA VACA">POZO DE LA VACA</option>
-<option value="POZO HONDO">POZO HONDO</option>
-<option value="POZO RICO">POZO RICO</option>
-<option value="PRADERAS DE NUEVO LEON">PRADERAS DE NUEVO LEON</option>
-<option value="PRESA DE CLAVO">PRESA DE CLAVO</option>
-<option value="PROVIDENCIA(LEON)">PROVIDENCIA(LEON)</option>
-<option value="PROYECTO SAN ISIDRO">PROYECTO SAN ISIDRO</option>
-<option value="PROYECTO SAN MATEO">PROYECTO SAN MATEO</option>
-<option value="PTO SANDINO (LA PAZ CENTR">PTO SANDINO (LA PAZ CENTR</option>
-<option value="PTO. MORAZAN(CHINANDEGA">PTO. MORAZAN(CHINANDEGA</option>
-<option value="PUEBLO CINCO PINOS">PUEBLO CINCO PINOS</option>
-<option value="PUEBLO DE ACHUAPA">PUEBLO DE ACHUAPA</option>
-<option value="PUEBLO DE POSOLTEGA">PUEBLO DE POSOLTEGA</option>
-<option value="PUEBLO DE SAN FRANCISCO">PUEBLO DE SAN FRANCISCO</option>
-<option value="PUEBLO LARREYNAGA">PUEBLO LARREYNAGA</option>
-<option value="PUEBLO SAN PEDRO">PUEBLO SAN PEDRO</option>
-<option value="PUEBLO SANTO TOMAS">PUEBLO SANTO TOMAS</option>
-<option value="PUEBLO VILLANUEVA">PUEBLO VILLANUEVA</option>
-<option value="PUENTE DEL HOYO">PUENTE DEL HOYO</option>
-<option value="PUENTE PEREIRA">PUENTE PEREIRA</option>
-<option value="PUERTO MOMOTOMBO(LEON">PUERTO MOMOTOMBO(LEON</option>
-<option value="PUERTO MORAZAN(CHINAND)">PUERTO MORAZAN(CHINAND)</option>
-<option value="PUERTO SANDINO(LEON)">PUERTO SANDINO(LEON)</option>
-<option value="PUNTA Ã‘ATA">PUNTA Ã‘ATA</option>
-<option value="PUREZA DE MARIA">PUREZA DE MARIA</option>
-<option value="QUEBRADA ARRIBA">QUEBRADA ARRIBA</option>
-<option value="QUEBRADA ONDA">QUEBRADA ONDA</option>
-<option value="QUETZALIA">QUETZALIA</option>
-<option value="QUEZALGUAQUE(LEON)">QUEZALGUAQUE(LEON)</option>
-<option value="QUITANCA">QUITANCA</option>
-<option value="R GRILLO LOS MILLONARIOS">R GRILLO LOS MILLONARIOS</option>
-<option value="R GRIOS LA ESTACION">R GRIOS LA ESTACION</option>
-<option value="R. GONZALEZ(CHINANDEGA)">R. GONZALEZ(CHINANDEGA)</option>
-<option value="RAMON SALVATIERRA">RAMON SALVATIERRA</option>
-<option value="RANCHERIA">RANCHERIA</option>
-<option value="RAUL VILCHEZ (LA PAZ CENT">RAUL VILCHEZ (LA PAZ CENT</option>
-<option value="REALEJO(CHINANDEGA)">REALEJO(CHINANDEGA)</option>
-<option value="REP. O. TURACIOS (LEON)">REP. O. TURACIOS (LEON)</option>
-<option value="REPARTO 18 DE AGOSTO">REPARTO 18 DE AGOSTO</option>
-<option value="REPARTO ADIAC">REPARTO ADIAC</option>
-<option value="REPARTO HAMBURGO">REPARTO HAMBURGO</option>
-<option value="REPARTO SINAI">REPARTO SINAI</option>
-<option value="REPARTO WELLS">REPARTO WELLS</option>
-<option value="REPTO ESFUERZO COMUNIDAD">REPTO ESFUERZO COMUNIDAD</option>
-<option value="RESIDENCIAL GUADALUPE">RESIDENCIAL GUADALUPE</option>
-<option value="REY DE REYES">REY DE REYES</option>
-<option value="RICON GARCIA">RICON GARCIA</option>
-<option value="RIGOBERTO LOPEZ PEREZ">RIGOBERTO LOPEZ PEREZ</option>
-<option value="RINCON DE LOS BUEYES">RINCON DE LOS BUEYES</option>
-<option value="RIO ARRIBA">RIO ARRIBA</option>
-<option value="RIO CHIQUITO">RIO CHIQUITO</option>
-<option value="RIO GALLO">RIO GALLO</option>
-<option value="RIO GRANDE (EL SAUCE)">RIO GRANDE (EL SAUCE)</option>
-<option value="RIO NEGRO (VILLANUEVA)">RIO NEGRO (VILLANUEVA)</option>
-<option value="RIO VIEJO">RIO VIEJO</option>
-<option value="RODEO GRANDE(SOMOTILLO)">RODEO GRANDE(SOMOTILLO)</option>
-<option value="ROGELIO SANTANA (LEON)">ROGELIO SANTANA (LEON)</option>
-<option value="ROGER DESHON">ROGER DESHON</option>
-<option value="ROLANDO RODRIGUEZ">ROLANDO RODRIGUEZ</option>
-<option value="RONALD ALTAMIRANO">RONALD ALTAMIRANO</option>
-<option value="ROSARIO MURILLO">ROSARIO MURILLO</option>
-<option value="ROSENDO DANIEL PACHECO">ROSENDO DANIEL PACHECO</option>
-<option value="ROTA">ROTA</option>
-<option value="RPTO AHP A LA SHELL">RPTO AHP A LA SHELL</option>
-<option value="RPTO BENITO MAURICIO LACAYO">RPTO BENITO MAURICIO LACAYO</option>
-<option value="RPTO CARLOS NUQEZ">RPTO CARLOS NUQEZ</option>
-<option value="RPTO DIVINO NIÃ‘O">RPTO DIVINO NIÃ‘O</option>
-<option value="RPTO GUSTAVO LOPEZ">RPTO GUSTAVO LOPEZ</option>
-<option value="RPTO SANTA LUCIA">RPTO SANTA LUCIA</option>
-<option value="RPTO TERENCIO MUNGUIA">RPTO TERENCIO MUNGUIA</option>
-<option value="RPTO. AZARIAS H PALLAIS">RPTO. AZARIAS H PALLAIS</option>
-<option value="RPTO. BELEN">RPTO. BELEN</option>
-<option value="RPTO. BELEN (LA CEIBA)">RPTO. BELEN (LA CEIBA)</option>
-<option value="RPTO. BELLA VISTA">RPTO. BELLA VISTA</option>
-<option value="RPTO. BELLO AMANECER">RPTO. BELLO AMANECER</option>
-<option value="RPTO. BELLO HORIZONTE">RPTO. BELLO HORIZONTE</option>
-<option value="RPTO. CANDELARIA">RPTO. CANDELARIA</option>
-<option value="RPTO. CARLOS CANALES">RPTO. CARLOS CANALES</option>
-<option value="RPTO. CARMITA">RPTO. CARMITA</option>
-<option value="RPTO. DANIEL AVENDAQO">RPTO. DANIEL AVENDAQO</option>
-<option value="RPTO. DAVID ANDINO">RPTO. DAVID ANDINO</option>
-<option value="RPTO. DIVINO NIÃ‘O">RPTO. DIVINO NIÃ‘O</option>
-<option value="RPTO. DIVINO NIÃ‘O (EL VIEJO)">RPTO. DIVINO NIÃ‘O (EL VIEJO)</option>
-<option value="RPTO. EL GRANERO">RPTO. EL GRANERO</option>
-<option value="RPTO. EL PORVENIR">RPTO. EL PORVENIR</option>
-<option value="RPTO. EL PROGRESO">RPTO. EL PROGRESO</option>
-<option value="RPTO. EMILIO ROSA">RPTO. EMILIO ROSA</option>
-<option value="RPTO. ENABAS">RPTO. ENABAS</option>
-<option value="RPTO. FELIPE SANTANA">RPTO. FELIPE SANTANA</option>
-<option value="RPTO. FELIX  P. CARRILLO">RPTO. FELIX  P. CARRILLO</option>
-<option value="RPTO. FELIX P. CARRILLO">RPTO. FELIX P. CARRILLO</option>
-<option value="RPTO. FELIX P. QUIROZ">RPTO. FELIX P. QUIROZ</option>
-<option value="RPTO. FRANK MELLER">RPTO. FRANK MELLER</option>
-<option value="RPTO. H. Y M. DE CALVARITO">RPTO. H. Y M. DE CALVARITO</option>
-<option value="RPTO. HILARIO REYES">RPTO. HILARIO REYES</option>
-<option value="RPTO. HIPOLITO SANCHEZ">RPTO. HIPOLITO SANCHEZ</option>
-<option value="RPTO. INMACULADA CONCEPCIÃ“N DE MARIA">RPTO. INMACULADA CONCEPCIÃ“N DE MARIA</option>
-<option value="RPTO. JIRON">RPTO. JIRON</option>
-<option value="RPTO. JORGE ARDILA">RPTO. JORGE ARDILA</option>
-<option value="RPTO. LA FLORIDA">RPTO. LA FLORIDA</option>
-<option value="RPTO. LA UNION">RPTO. LA UNION</option>
-<option value="RPTO. MARITZA LOPEZ">RPTO. MARITZA LOPEZ</option>
-<option value="RPTO. MIRALAGO">RPTO. MIRALAGO</option>
-<option value="RPTO. NUEVA ESPERANZA">RPTO. NUEVA ESPERANZA</option>
-<option value="RPTO. REYNALDO VARELA">RPTO. REYNALDO VARELA</option>
-<option value="RPTO. RIGOBERTO LOPEZ P.">RPTO. RIGOBERTO LOPEZ P.</option>
-<option value="RPTO. ROBERTO CALDERON">RPTO. ROBERTO CALDERON</option>
-<option value="RPTO. RONALD SANDINO">RPTO. RONALD SANDINO</option>
-<option value="RPTO. SAN NICOLAS">RPTO. SAN NICOLAS</option>
-<option value="RPTO. SANTA MARIA">RPTO. SANTA MARIA</option>
-<option value="RPTO. SONIA BARRERA">RPTO. SONIA BARRERA</option>
-<option value="RPTO.11 DE ENERO">RPTO.11 DE ENERO</option>
-<option value="RPTO.ARCANGEL">RPTO.ARCANGEL</option>
-<option value="RPTO.LA MERCED">RPTO.LA MERCED</option>
-<option value="RPTO.MAYLING">RPTO.MAYLING</option>
-<option value="RPTO.ROSARIO MURILLO">RPTO.ROSARIO MURILLO</option>
-<option value="RPTO.SEMILLA DE ESPERANZA">RPTO.SEMILLA DE ESPERANZA</option>
-<option value="RPTO.TEODORO K.(EL VIEJO)">RPTO.TEODORO K.(EL VIEJO)</option>
-<option value="RUBEN DARIO">RUBEN DARIO</option>
-<option value="RUBEN DARIO(CHINANDEGA)">RUBEN DARIO(CHINANDEGA)</option>
-<option value="S.MAYORGA(LAS PARCELAS)">S.MAYORGA(LAS PARCELAS)</option>
-<option value="SABANA GRANDE">SABANA GRANDE</option>
-<option value="SAGRADA FAMILIA">SAGRADA FAMILIA</option>
-<option value="SALALE">SALALE</option>
-<option value="SALOMON DE LA SELVA">SALOMON DE LA SELVA</option>
-<option value="SAN AGUSTIN">SAN AGUSTIN</option>
-<option value="SAN AGUSTIN(CHINANDEGA)">SAN AGUSTIN(CHINANDEGA)</option>
-<option value="SAN ANDRES">SAN ANDRES</option>
-<option value="SAN ANDRES RANCHERIAS">SAN ANDRES RANCHERIAS</option>
-<option value="SAN ANTONIO">SAN ANTONIO</option>
-<option value="SAN ANTONIO(CHICHIGALPA)">SAN ANTONIO(CHICHIGALPA)</option>
-<option value="SAN BENITO">SAN BENITO</option>
-<option value="SAN CARLOS">SAN CARLOS</option>
-<option value="SAN CLAUDIO">SAN CLAUDIO</option>
-<option value="SAN CRISTOBAL">SAN CRISTOBAL</option>
-<option value="SAN DIONISIO">SAN DIONISIO</option>
-<option value="SAN FCO DEL NORTE(CHINAN">SAN FCO DEL NORTE(CHINAN</option>
-<option value="SAN FELIPE">SAN FELIPE</option>
-<option value="SAN FERNANDO">SAN FERNANDO</option>
-<option value="SAN FRANCISCO">SAN FRANCISCO</option>
-<option value="SAN FRANCISCO DE ASIS">SAN FRANCISCO DE ASIS</option>
-<option value="SAN FRANCISCO(LEON)">SAN FRANCISCO(LEON)</option>
-<option value="SAN GIL">SAN GIL</option>
-<option value="SAN IDELFONSO">SAN IDELFONSO</option>
-<option value="SAN IGNACIO">SAN IGNACIO</option>
-<option value="SAN ISIDRO (LEON)">SAN ISIDRO (LEON)</option>
-<option value="SAN JACINTO(LEON)">SAN JACINTO(LEON)</option>
-<option value="SAN JACINTO(TELICA)">SAN JACINTO(TELICA)</option>
-<option value="SAN JERONIMO">SAN JERONIMO</option>
-<option value="SAN JOSE">SAN JOSE</option>
-<option value="SAN JOSE OBRAJE">SAN JOSE OBRAJE</option>
-<option value="SAN JOSE SALINAS GRANDE">SAN JOSE SALINAS GRANDE</option>
-<option value="SAN JUAN (LEON)">SAN JUAN (LEON)</option>
-<option value="SAN JUAN DE LAS PENCAS">SAN JUAN DE LAS PENCAS</option>
-<option value="SAN JUAN(LEON)">SAN JUAN(LEON)</option>
-<option value="SAN JUDAS">SAN JUDAS</option>
-<option value="SAN LUIS">SAN LUIS</option>
-<option value="SAN LUIS (CORINTO)">SAN LUIS (CORINTO)</option>
-<option value="SAN LUIS CUAJILOTE">SAN LUIS CUAJILOTE</option>
-<option value="SAN LUIS DE AMAYO">SAN LUIS DE AMAYO</option>
-<option value="SAN MANUEL">SAN MANUEL</option>
-<option value="SAN MARCOS">SAN MARCOS</option>
-<option value="SAN MARTIN (CORINTO)">SAN MARTIN (CORINTO)</option>
-<option value="SAN MIGUELITO">SAN MIGUELITO</option>
-<option value="SAN NICOLAS">SAN NICOLAS</option>
-<option value="SAN NICOLAS DE ACHUAPA">SAN NICOLAS DE ACHUAPA</option>
-<option value="SAN PEDRO DEL NORTE(CHIN">SAN PEDRO DEL NORTE(CHIN</option>
-<option value="SAN PEDRO NUEVO">SAN PEDRO NUEVO</option>
-<option value="SAN RAMO(VILLA NUEVA)">SAN RAMO(VILLA NUEVA)</option>
-<option value="SAN RAMON(EL SAUCE)">SAN RAMON(EL SAUCE)</option>
-<option value="SAN REMIGIO">SAN REMIGIO</option>
-<option value="SAN ROQUE SECTOR OJO DE AGUA">SAN ROQUE SECTOR OJO DE AGUA</option>
-<option value="SAN SEBASTIAN">SAN SEBASTIAN</option>
-<option value="SANJON SANTO CRISTO">SANJON SANTO CRISTO</option>
-<option value="SANTA ANA">SANTA ANA</option>
-<option value="SANTA BARBARA">SANTA BARBARA</option>
-<option value="SANTA CATALINA">SANTA CATALINA</option>
-<option value="SANTA CATALUÃ‘A">SANTA CATALUÃ‘A</option>
-<option value="SANTA CRUZ">SANTA CRUZ</option>
-<option value="SANTA ELENA">SANTA ELENA</option>
-<option value="SANTA EULALIA">SANTA EULALIA</option>
-<option value="SANTA ISABEL">SANTA ISABEL</option>
-<option value="SANTA LUCIA">SANTA LUCIA</option>
-<option value="SANTA MARIA">SANTA MARIA</option>
-<option value="SANTA MARIA DEL MAR">SANTA MARIA DEL MAR</option>
-<option value="SANTA MATILDE">SANTA MATILDE</option>
-<option value="SANTA NARCISA">SANTA NARCISA</option>
-<option value="SANTA PATRICIA">SANTA PATRICIA</option>
-<option value="SANTA PAULA">SANTA PAULA</option>
-<option value="SANTA RITA">SANTA RITA</option>
-<option value="SANTA ROSA">SANTA ROSA</option>
-<option value="SANTA ROSA DE LOS PARRALES">SANTA ROSA DE LOS PARRALES</option>
-<option value="SANTA TERESA">SANTA TERESA</option>
-<option value="SANTAMARIA">SANTAMARIA</option>
-<option value="SANTIAGO DE LOS CABALLEROS">SANTIAGO DE LOS CABALLEROS</option>
-<option value="SANTIAGO(CHICHIGALPA)">SANTIAGO(CHICHIGALPA)</option>
-<option value="SANTIAGO(NAGAROTE)">SANTIAGO(NAGAROTE)</option>
-<option value="SANTO TOMAS">SANTO TOMAS</option>
-<option value="SANTO TOMAS RURAL">SANTO TOMAS RURAL</option>
-<option value="SAUL ALVAREZ">SAUL ALVAREZ</option>
-<option value="SILVIO CASTRO">SILVIO CASTRO</option>
-<option value="SIRAMA NORTE Y SUR CHICHI">SIRAMA NORTE Y SUR CHICHI</option>
-<option value="SN BENITO #2(CHINANDEGA)">SN BENITO #2(CHINANDEGA)</option>
-<option value="SN BENITO(CHINANDEGA)">SN BENITO(CHINANDEGA)</option>
-<option value="SN MARCOS-LAS PILAS">SN MARCOS-LAS PILAS</option>
-<option value="SN RAFAEL SAZAMA">SN RAFAEL SAZAMA</option>
-<option value="SOMOTILLO(CHINANDEGA)">SOMOTILLO(CHINANDEGA)</option>
-<option value="SONRISA DE DIOS">SONRISA DE DIOS</option>
-<option value="SOR MARIA ROMERO">SOR MARIA ROMERO</option>
-<option value="STA ANA(CHINANDEGA)">STA ANA(CHINANDEGA)</option>
-<option value="STA LUCIA LAS CHACARAS">STA LUCIA LAS CHACARAS</option>
-<option value="STA TERESA">STA TERESA</option>
-<option value="STA. ALICIA DE APANTE">STA. ALICIA DE APANTE</option>
-<option value="STA. ROSA DEL PEÃ‘ON(LEON)">STA. ROSA DEL PEÃ‘ON(LEON)</option>
-<option value="STO TOMAS DEL NORTE(CHIN">STO TOMAS DEL NORTE(CHIN</option>
-<option value="SUBTIAVA">SUBTIAVA</option>
-<option value="SUBTIAVA (SUR)">SUBTIAVA (SUR)</option>
-<option value="SUBTIAVA NORTE">SUBTIAVA NORTE</option>
-<option value="TAMARINDO (LA PAZ CENTRO">TAMARINDO (LA PAZ CENTRO</option>
-<option value="TECOMAPA">TECOMAPA</option>
-<option value="TECUNAME">TECUNAME</option>
-<option value="TELICA NORTE">TELICA NORTE</option>
-<option value="TELICA SUR">TELICA SUR</option>
-<option value="TELICA(LEON)">TELICA(LEON)</option>
-<option value="TERMINAL">TERMINAL</option>
-<option value="TERRERO CERCADO">TERRERO CERCADO</option>
-<option value="THOMAS MARTINEZ">THOMAS MARTINEZ</option>
-<option value="TICUANTEPE">TICUANTEPE</option>
-<option value="TIERRA PROMETIDA">TIERRA PROMETIDA</option>
-<option value="TODA AMERICA">TODA AMERICA</option>
-<option value="TODO SERA MEJOR(LEON)">TODO SERA MEJOR(LEON)</option>
-<option value="TOLAPA">TOLAPA</option>
-<option value="TOLOLAR">TOLOLAR</option>
-<option value="TOM VALLE">TOM VALLE</option>
-<option value="TOMAS BORGE I ETAPA">TOMAS BORGE I ETAPA</option>
-<option value="TOMAS BORGE II ETAPA">TOMAS BORGE II ETAPA</option>
-<option value="TONALA">TONALA</option>
-<option value="TONALA URBANO">TONALA URBANO</option>
-<option value="TRAPICHON">TRAPICHON</option>
-<option value="UNION ESPAÃ‘A LAS GRIETAS">UNION ESPAÃ‘A LAS GRIETAS</option>
-<option value="URBANIZACION BELEN">URBANIZACION BELEN</option>
-<option value="URBANIZACION LAREDO">URBANIZACION LAREDO</option>
-<option value="UTRECHT">UTRECHT</option>
-<option value="VALLE DE JESUS(NAGAROTE)">VALLE DE JESUS(NAGAROTE)</option>
-<option value="VALLE LA PRIMAVERA">VALLE LA PRIMAVERA</option>
-<option value="VALLE LA ZAPATA">VALLE LA ZAPATA</option>
-<option value="VALLE LAS MAYORGA">VALLE LAS MAYORGA</option>
-<option value="VALLE LOS LINARTE">VALLE LOS LINARTE</option>
-<option value="VALLE LOS MORENOS">VALLE LOS MORENOS</option>
-<option value="VALLE SAN MARTIN">VALLE SAN MARTIN</option>
-<option value="VALLE VIEJO">VALLE VIEJO</option>
-<option value="VARELA">VARELA</option>
-<option value="VENCEREMOS(LEON)">VENCEREMOS(LEON)</option>
-<option value="VENEZUELA">VENEZUELA</option>
-<option value="VERACRUZ(LEON)">VERACRUZ(LEON)</option>
-<option value="VERDUM">VERDUM</option>
-<option value="VERONICA LACAYO">VERONICA LACAYO</option>
-<option value="VERONICA LACAYO (QUEZALGUAQUE)">VERONICA LACAYO (QUEZALGUAQUE)</option>
-<option value="VERONICA LACAYO(TELICA)">VERONICA LACAYO(TELICA)</option>
-<option value="VIGIL">VIGIL</option>
-<option value="VILCHEZ RODRIGUEZ">VILCHEZ RODRIGUEZ</option>
-<option value="VILLA 15 DE JULIO(CHINANDE)">VILLA 15 DE JULIO(CHINANDE)</option>
-<option value="VILLA 23 DE JULIO(LEON)">VILLA 23 DE JULIO(LEON)</option>
-<option value="VILLA ALCOBENDA">VILLA ALCOBENDA</option>
-<option value="VILLA DEMOCRACIA">VILLA DEMOCRACIA</option>
-<option value="VILLA ESPAÃ‘A (VILLANUEVA)">VILLA ESPAÃ‘A (VILLANUEVA)</option>
-<option value="VILLA ESPERANZA">VILLA ESPERANZA</option>
-<option value="VILLA ESPERANZA (SALINAS GRANDES)">VILLA ESPERANZA (SALINAS GRANDES)</option>
-<option value="VILLA LA ASUNCION (LEON)">VILLA LA ASUNCION (LEON)</option>
-<option value="VILLA MINESOTA">VILLA MINESOTA</option>
-<option value="VILLA PANAMA">VILLA PANAMA</option>
-<option value="VILLA SAMARIA">VILLA SAMARIA</option>
-<option value="VILLA SANTA ELENA">VILLA SANTA ELENA</option>
-<option value="VILLA SOBERANA">VILLA SOBERANA</option>
-<option value="VILLANUEVA">VILLANUEVA</option>
-<option value="VILLANUEVA RURAL">VILLANUEVA RURAL</option>
-<option value="VILLANUEVA(CHINANDEGA)">VILLANUEVA(CHINANDEGA)</option>
-<option value="WALTER ARATA">WALTER ARATA</option>
-<option value="WALTER ESTRADA">WALTER ESTRADA</option>
-<option value="WALTER FERRETI">WALTER FERRETI</option>
-<option value="WILLIAM FONSECA(LEON)">WILLIAM FONSECA(LEON)</option>
-<option value="WISPANTE">WISPANTE</option>
-<option value="XOCHILT ACALT">XOCHILT ACALT</option>
-<option value="ZAMORANO">ZAMORANO</option>
 </select>
 </div>
 <div id="btn-filter" class="md:col-span-1 bg-primary text-white p-5 rounded-2xl border border-primary shadow-sm flex items-center justify-center cursor-pointer hover:bg-primary-container transition-colors group">
@@ -1304,107 +265,1319 @@
 </main>
 </div>
 <!-- Micro-interactions Script -->
-<script>
-        const SUPABASE_URL = 'https://qxhhkezxgmdsdfmwbyyg.supabase.co';
-        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4aGhrZXp4Z21kc2RmbXdieXlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEwNTM2ODIsImV4cCI6MjA5NjYyOTY4Mn0.KufYFMSOCUTsdoqAdb1zToEKCebOSdVQYUC09Lk4T04';
-        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-        const TABLE_NAME = 'NISS MANAGMENT';
 
-        let currentPage = 1;
-        const pageSize = 15;
-        let totalRecords = 0;
+<script type="module">
+    import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
-        document.addEventListener('DOMContentLoaded', () => {
-            setupUIInteractions();
+    const SUPABASE_URL = 'https://qxhhkezxgmdsdfmwbyyg.supabase.co';
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4aGhrZXp4Z21kc2RmbXdieXlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEwNTM2ODIsImV4cCI6MjA5NjYyOTY4Mn0.KufYFMSOCUTsdoqAdb1zToEKCebOSdVQYUC09Lk4T04';
+    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+    const TABLE_NAME = 'NISS MANAGMENT';
+
+    const locationData = {
+  "CHINANDEGA": {
+    "CHICHIGALPA": [
+      "AGUSTO CESAR SANDINO",
+      "ASOCHIVA",
+      "BAVINIC",
+      "BENDICION DE DIOS",
+      "BETHEL",
+      "BUENOS AIRES",
+      "CAMINO DE JESUS",
+      "CANDELARIA",
+      "CARLOS FONSECA N: 1",
+      "CARLOS FONSECA N: 2",
+      "COMARCA GUANACASTAL",
+      "CONCEPCION(CHICHIGALPA)",
+      "COSMAPA",
+      "EL MOJON",
+      "EL PELLISCO",
+      "EL TANQUE",
+      "ERICK RAMIREZ",
+      "ESQUIPULAS",
+      "GUADALUPE",
+      "JIMENEZ",
+      "JUAN JOSE BRICEQO",
+      "LA CRUZ",
+      "LA LAGUNA",
+      "LA PARROQUIA(CHICHIGALPA)",
+      "LA PARROQUIA(POSOLTEGA)",
+      "LAS MERCEDES(CHICHIGALP)",
+      "LAS NUBES",
+      "LAS PALMERAS CHICHIGALP",
+      "LOS EBANOS",
+      "LOS MADEROS",
+      "MARVIN SALAZAR",
+      "MODESTO PALMA(CHICHIGAL",
+      "NUEVA SALVACION",
+      "NUEVO AMANECER",
+      "QUETZALIA",
+      "QUITANCA",
+      "REPARTO WELLS",
+      "ROLANDO RODRIGUEZ",
+      "RONALD ALTAMIRANO",
+      "SAN ANTONIO(CHICHIGALPA)",
+      "SAN JOSE",
+      "SANTA MATILDE",
+      "SANTIAGO(CHICHIGALPA)",
+      "SIRAMA NORTE Y SUR CHICHI",
+      "VALLE VIEJO"
+    ],
+    "CHINANDEGA": [
+      "12 DE SEPTIEMBRE(CHINAND)",
+      "2 DE SEPTIEMBRE",
+      "ABRAHAM RUGAMA",
+      "AGUILERA",
+      "ALEX CENTENO",
+      "ANA VIRGEN ROBLE(CHINAN)",
+      "ANEXO RANCHERIA",
+      "ANEXO VILLA 15",
+      "AYAPAL (CHINANDEGA)",
+      "AZARIAS H PALLAIS",
+      "BAVINIC",
+      "BAYARDO ARCE",
+      "BELEN(CHINANDEGA)",
+      "BELLO AMANECER",
+      "BISMARCK MARTINEZ",
+      "BO. LIBERTAD(CHINANDEGA)",
+      "BO. R. HERRERA(CHINANDE)",
+      "BUENA ESPERANZA",
+      "BUENOS AIRES",
+      "CACHORROS DE SANDINO",
+      "CALVARIO(CHINANDEGA)",
+      "CAMILO ORTEGA",
+      "CAMPANA AZUL",
+      "CARLOS FONSECA(CHINAND)",
+      "CARLOS MANZANARES",
+      "CARRETERA A LEON",
+      "CARRETERA CORINTO",
+      "CHINANDEGA(CHINANDEGA)",
+      "CLAUDIO BONETI",
+      "CLUB LEONES",
+      "CLUB ROTARIO",
+      "COL.19 DE JULIO",
+      "COLONIA GRACSA",
+      "COLONIA GRACSA(CHINANDEGA)",
+      "CONCEPCION DE MARIA",
+      "COOPERATIVA EL ROSARIO",
+      "CORAZON DE JESUS",
+      "COSMAPA",
+      "DAVID ANDINO(CHINANDEGA)",
+      "DAVILA BOLAQOS",
+      "DESARR. COMUNIT(CHINANDE",
+      "DULCE NOMBRE DE JESUS",
+      "EL CHONCO",
+      "EL HIGUERAL",
+      "EL LIMONAL",
+      "EL NARANJO",
+      "EL PELLISCO(CHINANDEGA)",
+      "EL PILOTO",
+      "EL RAIZAL",
+      "EL ROSARIO",
+      "EL TEMPISQUE",
+      "FARALLONES",
+      "FILADELFIA",
+      "GERARDO LINDO",
+      "GERMAN POMARES O.",
+      "GUADALUPE (CHINANDEGA)",
+      "JB CENTENO",
+      "JOSE BENITO CENTENO",
+      "JOSE BONILLA",
+      "JULIO CESAR TINOCO",
+      "LA BOLSA (CHINANDEGA)",
+      "LA CRUZ",
+      "LA FLORIDA",
+      "LA GRECIA(CHINANDEGA)",
+      "LA JOYA",
+      "LA LIBERTAD",
+      "LA MORA",
+      "LA RESISTENCIA",
+      "LA TEJANA",
+      "LAS GRIETAS(CHINANDEGA)",
+      "LAS VEINTES",
+      "LOS ANGELES",
+      "LOS ARCOS",
+      "LOS MILLONARIOS(CHINANDE",
+      "LOS PEREZ",
+      "LUIS ANDURAY",
+      "MOKORON(CHINANDEGA)",
+      "MONTE BELLO",
+      "MOSERRAT(CHINANDEGA)",
+      "OJO DE AGUA",
+      "PEDROJCHAMORRO (CHINAN)",
+      "PIEDRA QUEMADA",
+      "R GRILLO LOS MILLONARIOS",
+      "R GRIOS LA ESTACION",
+      "R. GONZALEZ(CHINANDEGA)",
+      "RANCHERIA",
+      "ROSARIO MURILLO",
+      "RPTO DIVINO NIÃ‘O",
+      "RPTO. CARMITA",
+      "RPTO. DAVID ANDINO",
+      "RPTO. EL PROGRESO",
+      "RPTO. JIRON",
+      "RPTO. LA FLORIDA",
+      "RPTO.ARCANGEL",
+      "RUBEN DARIO(CHINANDEGA)",
+      "SAN AGUSTIN",
+      "SAN AGUSTIN(CHINANDEGA)",
+      "SAN CRISTOBAL",
+      "SAN FRANCISCO",
+      "SAN JOSE OBRAJE",
+      "SAN JUAN DE LAS PENCAS",
+      "SAN LUIS",
+      "SANTA BARBARA",
+      "SANTA CATALINA",
+      "SANTA PATRICIA",
+      "SN BENITO #2(CHINANDEGA)",
+      "SN BENITO(CHINANDEGA)",
+      "SOR MARIA ROMERO",
+      "STA ANA(CHINANDEGA)",
+      "TRAPICHON",
+      "URBANIZACION BELEN",
+      "VALLE LOS MORENOS",
+      "VILLA 15 DE JULIO(CHINANDE)",
+      "WALTER ARATA",
+      "WALTER ESTRADA"
+    ],
+    "POSOLTEGA": [
+      "BETESDA",
+      "BOSQUE SUR",
+      "CALLE REAL EL BOSQUE",
+      "CARLOS HUETE",
+      "CMCA LOS ZANJONES",
+      "CMCA.FILIBERTO MORALES",
+      "COM. LA VIRGEN",
+      "COMARCA POSOLTEGUILLA",
+      "COMARCA TOLOLAR",
+      "DIVINA MISERICORDIA",
+      "EL OJOCHAL",
+      "EL TANQUE",
+      "EL TRIANON",
+      "GUANACASTAL",
+      "JUAN  PEGUERO",
+      "JUAN XXIII",
+      "LA VIRGEN",
+      "LOS MANGLES",
+      "MOJONES DE POSOLTEGA",
+      "POSOLTEGA",
+      "POSOLTEGA RURAL",
+      "PUEBLO DE POSOLTEGA",
+      "RPTO. BELLO AMANECER",
+      "RPTO. DIVINO NIÃ‘O",
+      "RPTO. FRANK MELLER",
+      "RPTO. JORGE ARDILA",
+      "RPTO. NUEVA ESPERANZA",
+      "SAN CARLOS",
+      "SANTA MARIA",
+      "SANTA NARCISA",
+      "VALLE LAS MAYORGA",
+      "VILLA ALCOBENDA"
+    ],
+    "PUERTO MORAZAN": [
+      "COM. CRISTINA",
+      "COM. PALACIO(TONALA)",
+      "COMARCA 10-14",
+      "COMARCA 10-14(CHINANDEGA",
+      "COMARCA PALACIOS",
+      "CUATRO ESQUINAS",
+      "EL TEMPISQUE",
+      "GUANACASTILLO",
+      "LOS LIMONES",
+      "LUCRECIA LINDO",
+      "ORO VERDE",
+      "PAZ ALI",
+      "PAZ VILLAGE",
+      "PLAN NICARAGUA",
+      "POBLADO MORAZAN",
+      "PTO. MORAZAN(CHINANDEGA",
+      "PUERTO MORAZAN(CHINAND)",
+      "QUEBRADA ONDA",
+      "SAN LUIS DE AMAYO",
+      "SAN MANUEL",
+      "SILVIO CASTRO",
+      "TICUANTEPE",
+      "TONALA",
+      "TONALA URBANO"
+    ],
+    "EL VIEJO": [
+      "AMIGOS DE HOLANDA",
+      "APASCALI",
+      "APOSENTILLO",
+      "ASERRADORES",
+      "AURELIO CARRASCO",
+      "BAL JIQUILILLO",
+      "BO. EL SEMENTERIO",
+      "BO. ESQUIPULAS",
+      "BO. LA PALMA",
+      "BO. SAN JOSE",
+      "BO.LA PARROQUIA",
+      "BUENOS AIRES",
+      "CABO DE HORNO",
+      "CARR. COSIGUINA POTOSI",
+      "CAÃ‘A BRAVA",
+      "CERRO EL GALLO",
+      "CHIMALTEPE",
+      "CHORRERA",
+      "COL. EL MAESTRO",
+      "COL. EVERT MENDOZA",
+      "COL. OVIEDO(EL VIEJO)",
+      "COL.BANANERA",
+      "COL.MARIO CARI.",
+      "COL.MIGUEL JAR.",
+      "COL.NARCISO ZE.",
+      "COLON GERMAN P.(EL VIEJO)",
+      "COLON GERMAN POMARES",
+      "COMARCA 10-14",
+      "COMUNIDAD SAN LUIS",
+      "COSIGUINA",
+      "EL APANTE",
+      "EL BEJUCO",
+      "EL CAPULIN",
+      "EL CHORRO",
+      "EL CONGO",
+      "EL ESPAVEL",
+      "EL JICARITO",
+      "EL MANGUITO",
+      "EL MANZANO",
+      "EL MITCH",
+      "EL PASTORAL",
+      "EL PEDREGAL",
+      "EL ROSARIO",
+      "EL TINTAL",
+      "EL VIEJO",
+      "EL VIEJO RURAL",
+      "EMIGDIA CATIN",
+      "ENTIMO ANDINO",
+      "FRANCISCO LAGUNA",
+      "GANCHO DE LA MONA",
+      "HATO GRANDE",
+      "JIQUILILLO",
+      "KILAKA",
+      "LA BAYONA",
+      "LA CURVA",
+      "LA HISTORICA",
+      "LA HOLLADA",
+      "LA PEDRERA",
+      "LA PICOTA",
+      "LA TIGUILOTADA",
+      "LA UNIDAD",
+      "LA VINAGRERA",
+      "LA VIRGEN DEL CAMINO",
+      "LAS LAJAS",
+      "LAS NOVENTA",
+      "LAS PARCELAS",
+      "LIBORNIA",
+      "LOS CERRITOS",
+      "LOS CHEROS",
+      "LOS GEMELOS",
+      "LOS GUERREROS",
+      "LOS LAURELES",
+      "LOS MILLONARIOS",
+      "LOS PANIQUINES",
+      "LOS POCITOS",
+      "LOS RANCHOS",
+      "LOS ROBLES",
+      "LOS VALIENTES",
+      "MANAGUITA",
+      "MARIO COREA",
+      "MARVIN MELENDEZ",
+      "MECHAPA",
+      "MILAGRO DE DIOS",
+      "MONTE ROSA",
+      "NARCISO SALAZAR",
+      "NIDIA ESPINALES",
+      "NUEVO AMANECER",
+      "ORO VERDE",
+      "PALERMO",
+      "PALESTINA",
+      "PANCASAN",
+      "PEDRO PABLO MARTINEZ",
+      "PETACALTEPE",
+      "PLAYONES DE CATARINA",
+      "POTOSI(EL VIEJO)",
+      "POZO DE LA VACA",
+      "PUENTE DEL HOYO",
+      "PUNTA Ã‘ATA",
+      "RAMON SALVATIERRA",
+      "RIO CHIQUITO",
+      "RIO VIEJO",
+      "RPTO. DIVINO NIÃ‘O (EL VIEJO)",
+      "RPTO.11 DE ENERO",
+      "RPTO.MAYLING",
+      "RPTO.ROSARIO MURILLO",
+      "RPTO.TEODORO K.(EL VIEJO)",
+      "SAN ANDRES",
+      "SAN CARLOS",
+      "SAN FRANCISCO",
+      "SAN LUIS CUAJILOTE",
+      "SAN REMIGIO",
+      "SANTA MARIA",
+      "SANTA MARIA DEL MAR",
+      "SANTA RITA",
+      "SANTA ROSA",
+      "SANTO TOMAS",
+      "SN RAFAEL SAZAMA",
+      "TOM VALLE",
+      "VENEZUELA",
+      "VERDUM",
+      "VILCHEZ RODRIGUEZ",
+      "WISPANTE"
+    ],
+    "CORINTO": [
+      "ANTONIO LARA(CORINTO)",
+      "APC. COMAN-ENCA(CORINTO)",
+      "BARRIO NUEVO(CORINTO)",
+      "BO. NVO. CHORIZO(CORINTO)",
+      "BRENES, D. ROJAS(CORINTO)",
+      "CALLE CENTRAL (CORINTO)",
+      "CAMILO ORTEGA(CORINTO)",
+      "COL. INVI APATLAN(CORINTO)",
+      "EL PLAYON",
+      "EXBASE NAVAL",
+      "INSS CRUZ ROJA(CORINTO)",
+      "ISLA DEL AMOR(CORINTO)",
+      "MERCADO(CORINTO)",
+      "OMAR TORRIJOS(CORINTO)",
+      "PASOCABALLOS(CORINTO)",
+      "RPTO AHP A LA SHELL",
+      "SAN LUIS (CORINTO)",
+      "SAN MARTIN (CORINTO)"
+    ],
+    "REALEJO": [
+      "25 DE FEBRERO",
+      "AMEYA",
+      "BASCULA A. FEDERAL(CHINA",
+      "BISMARK MARTINEZ",
+      "CAROLINA SANTANA",
+      "CARR. CHINANDEGA-CORINTO",
+      "EL PORVENIR",
+      "GERMAN OMIER",
+      "NUEVO AMANECER III ETAPA",
+      "PASOCABALLOS",
+      "REALEJO(CHINANDEGA)",
+      "RPTO TERENCIO MUNGUIA"
+    ],
+    "SAN PEDRO DEL NORTE": [
+      "BIJAGUA ABAJO",
+      "BIJAGUA ARRIBA",
+      "COYOLITO",
+      "EL CHAPARRAL",
+      "EL LAJERO",
+      "EL PANAL",
+      "LA UNION",
+      "LOS LAURELES",
+      "PUEBLO SAN PEDRO",
+      "SAN PEDRO DEL NORTE(CHIN"
+    ],
+    "VILLANUEVA": [
+      "CAYANLIPE",
+      "CAÃ‘AFISTOLA",
+      "COLONIA ISRAEL",
+      "EL CAPULIN",
+      "EL GENIZARO",
+      "EL JICOTE",
+      "EL OBRAJE VILLANUEVA",
+      "EL PAJUIL",
+      "EL PUMA",
+      "EL ZAPOTE",
+      "FLOR DE ASALIA",
+      "GIÃ‘OCUAGO",
+      "GUASIMITO",
+      "JERUSALEN",
+      "LA FRAGOSA",
+      "LA JOLOTA",
+      "LA PAKAIRA",
+      "LAS PALANCAS",
+      "LAS PILAS",
+      "LOS ACHIOTES",
+      "LOS LAURELES",
+      "LOS TOLOLOS",
+      "LOURDES",
+      "MATA CAÃ‘A",
+      "MAYOCUNDA",
+      "PALO GRANDE(VILLANUEVA)",
+      "POZO RICO",
+      "PUEBLO VILLANUEVA",
+      "RICON GARCIA",
+      "RIO NEGRO (VILLANUEVA)",
+      "SAN FRANCISCO DE ASIS",
+      "SAN MARCOS",
+      "SAN RAMO(VILLA NUEVA)",
+      "SN MARCOS-LAS PILAS",
+      "TECOMAPA",
+      "VILLA ESPAÃ‘A (VILLANUEVA)",
+      "VILLA ESPERANZA",
+      "VILLANUEVA RURAL",
+      "VILLANUEVA(CHINANDEGA)"
+    ],
+    "SOMOTILLO": [
+      "AUGUSTO C SANDINO #1",
+      "AUGUSTO C SANDINO #2",
+      "BELLO AMANECER",
+      "CARLOS FONSECA",
+      "CASA BLANCA",
+      "CAYANLIPE BONETE",
+      "CERRO COLORADO",
+      "COFRADIA",
+      "EL ARENAL",
+      "EL CAIMITO",
+      "EL CHAPARRAL",
+      "EL DANTO",
+      "EL GUASAULE",
+      "EL HIGO",
+      "EL OBRAJE SOMOTILLO",
+      "EL OJOCHE",
+      "EL RODEITO",
+      "ENMANUEL",
+      "FRANCISCO REYES",
+      "GERMAN POMARES",
+      "JIQOCUAO",
+      "LA BARRERA",
+      "LA CARRETA",
+      "LA DANTA",
+      "LA FRAGUA",
+      "LA PALMITA",
+      "LA PAVANA",
+      "LA PERLA",
+      "LA RESISTENCIA",
+      "LAS COLINAS",
+      "LAS LIRAS",
+      "LAS MANCORNADAS",
+      "LAS MARIITAS",
+      "LOS BALCONES",
+      "LOS LIMONES",
+      "LOS TABLONES",
+      "LOS TORRES",
+      "MARIAS GRANDES",
+      "MARIMBERO (SOMOTILLO)",
+      "PALO GRANDE",
+      "PASO HONDO",
+      "RIGOBERTO LOPEZ PEREZ",
+      "RODEO GRANDE(SOMOTILLO)",
+      "SAGRADA FAMILIA",
+      "SAN ANTONIO",
+      "SAN FRANCISCO DE ASIS",
+      "SAN LUIS",
+      "SAN MIGUELITO",
+      "SANTA CATALUÃ‘A",
+      "SANTA EULALIA",
+      "SANTA PAULA",
+      "SANTA ROSA",
+      "SANTA TERESA",
+      "SOMOTILLO(CHINANDEGA)",
+      "URBANIZACION LAREDO",
+      "VILLA MINESOTA"
+    ],
+    "SANTO TOMAS DEL NORTE": [
+      "BARRIO NUEVO",
+      "CEIBA ERRADA",
+      "COLONIA ESPAÃ‘A",
+      "EL ESPINAL",
+      "LA PITA",
+      "LA UVA",
+      "LAS MARIAS",
+      "LOS JOVITOS",
+      "OJO DE AGUA",
+      "PASO HONDO",
+      "PUEBLO SANTO TOMAS",
+      "QUEBRADA ARRIBA",
+      "SANTO TOMAS RURAL",
+      "STO TOMAS DEL NORTE(CHIN"
+    ],
+    "SAN FRANCISCO DEL NORTE": [
+      "APARRAYA",
+      "CANDELARIA",
+      "EL GUACIMAL",
+      "EL HUGUTU",
+      "EL NANCITAL # 2",
+      "EL NARANJO",
+      "EL PAPALON",
+      "EL VALLE",
+      "GUAYABILLA ABAJO",
+      "GUAYABILLA ARRIBA",
+      "JOCOMICO",
+      "JUAN XXIII",
+      "LA FLOR",
+      "LARGATILLO",
+      "LAS ENRAMADAS",
+      "LAS JAGUAS",
+      "LAS MARIAS",
+      "LAS RASTRA",
+      "LOS CAMARONES",
+      "LOS PLANSITOS",
+      "PARET DEL VALLET",
+      "PUEBLO DE SAN FRANCISCO",
+      "SAN FCO DEL NORTE(CHINAN",
+      "SANTA TERESA",
+      "TERRERO CERCADO",
+      "ZAMORANO"
+    ],
+    "CINCO PINOS": [
+      "CAMILO ORTEGA",
+      "CINCO PINOS RURAL",
+      "CINCO PINOS(CHINANDEGA)",
+      "EL CARRIZAL",
+      "EL CERRO",
+      "EL ESPINO",
+      "EL JICARO",
+      "EL LLANO",
+      "EL PAVON",
+      "EL TAMARINDO",
+      "EL ZACATON",
+      "EL ZAPOTAL",
+      "LA CABRERA",
+      "LA COLONIA",
+      "LA HONDA",
+      "LAS CHACHAGUAS",
+      "LAS POZAS",
+      "LOS ARADITOS",
+      "LOS PAVONES",
+      "LOS SANJONES",
+      "MADERAS NEGRAS",
+      "PUEBLO CINCO PINOS",
+      "RIO GALLO"
+    ]
+  },
+  "LEON": {
+    "LA PAZ CENTRO": [
+      "AMATITAN",
+      "BISMARCK MARTINEZ",
+      "BO. 17 DE JULIO",
+      "BO. ADRIAN REYES",
+      "BO. AGAPITO OSORIO",
+      "BO. ANTONIO ULLOA",
+      "BO. EL CEMENTERIO",
+      "BO. ELIAS TELLEZ",
+      "BO. ENRIQUE COREA",
+      "BO. FELIPE LOPEZ",
+      "BO. HUMBERTO LOPEZ",
+      "BO. LOMAS DE SN. NICOLAS",
+      "BO. MANUEL VELAZQUEZ",
+      "BO. MARIA ELENA MARTINEZ",
+      "BO. PANCASAN",
+      "BO. RENE LINARTE",
+      "BO. TOMAS BORGE",
+      "CEIBA (LA FUENTE)",
+      "COM. EL PAPALONAL",
+      "COM. LA CONCHA",
+      "COM. LA SABANETA",
+      "COM. LAS CHACARAS",
+      "COM. LOS ARCOS",
+      "COM. LOS PORTILLOS",
+      "COM. SANTA EMILIA",
+      "COM. SOCORRO",
+      "CUATRO PALOS",
+      "EL ASTILLERO",
+      "EL GUAYABO",
+      "EL PARQUEO",
+      "EL TAMARINDO(LEON)",
+      "EL TERRERO",
+      "ENRIQUE LOPEZ (LA PAZ CEN",
+      "FCA. SAN MAURICIO",
+      "HACIENDA LAS COLINAS(LA P",
+      "JALISCO",
+      "LA FUENTE",
+      "LA PAZ CENTRO(LEON)",
+      "LA PAZ DE CRISTO",
+      "LA PAZ VIEJA",
+      "LA UNION",
+      "LAS PALMAS",
+      "LOMAS BETANIA(LA PAZ CEN)",
+      "LOS RAMIREZ",
+      "MADRE TERESA DE CALCUTA",
+      "PLAYA HERMOSA",
+      "PUERTO MOMOTOMBO(LEON",
+      "PUERTO SANDINO(LEON)",
+      "RAUL VILCHEZ (LA PAZ CENT",
+      "RINCON DE LOS BUEYES",
+      "RPTO. EL GRANERO",
+      "RPTO. MIRALAGO",
+      "RPTO. SAN NICOLAS",
+      "TAMARINDO (LA PAZ CENTRO",
+      "TECUNAME",
+      "VALLE LOS LINARTE",
+      "VILLA ESPERANZA"
+    ],
+    "LEON": [
+      "1RO. DE MAYO",
+      "3 DE JULIO(LEON)",
+      "ABANGASCA",
+      "AGUSTO CESAR SANDINO",
+      "ALFONSO CORTEZ",
+      "ANDRES ZAPATA",
+      "ANEXO OSCAR PEREZ",
+      "ANEXO SAN JERONIMO(LEON)",
+      "ANEXO VILLA 23 DE JULIO",
+      "ANEXO VILLA AUSTRIA",
+      "ANEXO VILLA SOBERANA",
+      "ANTENOR SANDINO",
+      "ANTENOR SANDINO II ETAPA",
+      "ANTENOR SANDINO III ETAPA",
+      "ARACELLYS PEREZ",
+      "ARROCERA",
+      "AVE. DEBAYLE",
+      "BAJO LOS NEGROS",
+      "BELLA VISTA (SALINAS GRANDES)",
+      "BO. MARITZA LOPEZ",
+      "BO. ZARAGOSA",
+      "BOCA DE CANTARO",
+      "BRISA DE ACOSASCO(LEON)",
+      "BRISAS DEL MAR",
+      "BRISAS DEL POCHOTE",
+      "BY PASS",
+      "CARLOS FONSECA",
+      "CARR SALINAS GDE",
+      "CARR. A PONELOYA(LEON)",
+      "CARR. LEON TELICA",
+      "CARR. LEON-MGUA(LEON)",
+      "CASTELEON",
+      "CEIBA-ARROCERA(LEON)",
+      "CHE GUEVARA",
+      "CIUDADELA SALINAS GDE.",
+      "CMCA SAN PEDRO",
+      "COL. EL MAESTRO",
+      "COLONIA EUGENIO PEREZ",
+      "COLONIA MERCEDES VARELA",
+      "COLONIA SANTA ISABEL",
+      "COLONIA UNIVERSIDAD",
+      "COM LOS PINOS",
+      "COM. CHACARASECA",
+      "COM.EL ALMENDRO",
+      "COM.SAGRADO C JESUS",
+      "COMARCA TROILO",
+      "COOP. OMAR TORRIJOS",
+      "COST. RECOLECCION(LEON)",
+      "COVISUBA",
+      "CUCHILLA SAN CARLOS",
+      "DIVINO NIÃ‘O",
+      "DIVINO NIÃ‘O (SALINAS GRANDES)",
+      "EL CALVARIO (LEON)",
+      "EL CALVARITO",
+      "EL CHAGUE",
+      "EL CHORIZO",
+      "EL COYOLAR (LEON)",
+      "EL JARRO",
+      "EL PASTAL",
+      "EL PLATANAL(LEON)",
+      "EL PORVENIR(LEON)",
+      "EL RECREO",
+      "EL SAGRARIO(LEON)",
+      "EL TRAPICHITO",
+      "EMIR CABEZAS",
+      "ENMANUEL",
+      "ERMITA DOLORES(LEON)",
+      "FATIMA",
+      "FUDECI I ETAPA",
+      "FUDECI II ETAPA",
+      "FUNDECI",
+      "GERICO",
+      "GRACIAS A DIOS",
+      "GUADALUPE",
+      "GUAPANGO",
+      "HATO GRANDE",
+      "HILTON MANZANARES",
+      "HUGO CHAVEZ",
+      "HYM ZARAGOZA",
+      "IDANIA FERNANDEZ",
+      "JOSE BENITO ESCOBAR",
+      "JULIO A CANALES",
+      "LA BOLSA",
+      "LA CEIBA",
+      "LA CEIBA TROILO",
+      "LA CONCEPCION",
+      "LA GALLINA",
+      "LA LEONA",
+      "LA MERCED",
+      "LA PEINETA",
+      "LA PINTORA",
+      "LA REFORMA",
+      "LABORIO",
+      "LAS CHACARAS",
+      "LAS LOMAS",
+      "LAS MERCEDES",
+      "LAS MULAS",
+      "LAS PEÃ‘ITAS(LEON)",
+      "LECHECUAGO(LEON)",
+      "LEON(LEON)",
+      "LINDA VISTA",
+      "LINO ARGUELLO",
+      "LOS ANGELES  URBANO",
+      "LOS BRIONES",
+      "LOS CALEROS",
+      "LOS CHAVEZ",
+      "LOS COCOS",
+      "LOS LECHESCUAGOS",
+      "LOS POSITOS",
+      "LOS RANCHOS",
+      "LOS REMEDIOS",
+      "LOS SANDOVAL",
+      "MARAÃ‘ONAL",
+      "MARCIO HERNANDEZ(LEON)",
+      "MARCOS MEDINA",
+      "MARIANA SAMPSON",
+      "MARIO QUANT",
+      "MILAGRO DE DIOS",
+      "MOJON SUR",
+      "MONTE HOREB",
+      "MONTE OSCURO",
+      "MONTE REDONDO",
+      "NUEVO DIA",
+      "NUEVO HORIZONTE",
+      "OBRAJE SUR",
+      "OSCAR PEREZ CASSAR",
+      "PALERMO",
+      "PEDRO ARAUZ",
+      "PLATANAL",
+      "PONELOYA(LEON)",
+      "POSADA DE SOL (LEON)",
+      "POZO HONDO",
+      "PRADERAS DE NUEVO LEON",
+      "PRESA DE CLAVO",
+      "PROVIDENCIA(LEON)",
+      "PROYECTO SAN ISIDRO",
+      "PROYECTO SAN MATEO",
+      "PUREZA DE MARIA",
+      "REP. O. TURACIOS (LEON)",
+      "REPARTO 18 DE AGOSTO",
+      "REPARTO ADIAC",
+      "REPARTO HAMBURGO",
+      "REPARTO SINAI",
+      "REPTO ESFUERZO COMUNIDAD",
+      "RESIDENCIAL GUADALUPE",
+      "REY DE REYES",
+      "ROGELIO SANTANA (LEON)",
+      "ROGER DESHON",
+      "ROSENDO DANIEL PACHECO",
+      "ROTA",
+      "RPTO BENITO MAURICIO LACAYO",
+      "RPTO CARLOS NUQEZ",
+      "RPTO GUSTAVO LOPEZ",
+      "RPTO SANTA LUCIA",
+      "RPTO. AZARIAS H PALLAIS",
+      "RPTO. BELEN",
+      "RPTO. BELEN (LA CEIBA)",
+      "RPTO. BELLA VISTA",
+      "RPTO. BELLO HORIZONTE",
+      "RPTO. CANDELARIA",
+      "RPTO. CARLOS CANALES",
+      "RPTO. FELIPE SANTANA",
+      "RPTO. FELIX  P. CARRILLO",
+      "RPTO. FELIX P. QUIROZ",
+      "RPTO. H. Y M. DE CALVARITO",
+      "RPTO. HILARIO REYES",
+      "RPTO. HIPOLITO SANCHEZ",
+      "RPTO. INMACULADA CONCEPCIÃ“N DE MARIA",
+      "RPTO. LA UNION",
+      "RPTO. MARITZA LOPEZ",
+      "RPTO. REYNALDO VARELA",
+      "RPTO. RIGOBERTO LOPEZ P.",
+      "RPTO. ROBERTO CALDERON",
+      "RPTO. RONALD SANDINO",
+      "RPTO. SAN NICOLAS",
+      "RPTO. SANTA MARIA",
+      "RPTO. SONIA BARRERA",
+      "RPTO.LA MERCED",
+      "RPTO.SEMILLA DE ESPERANZA",
+      "RUBEN DARIO",
+      "SALOMON DE LA SELVA",
+      "SAN AGUSTIN",
+      "SAN ANTONIO",
+      "SAN CARLOS",
+      "SAN DIONISIO",
+      "SAN FELIPE",
+      "SAN FRANCISCO(LEON)",
+      "SAN ISIDRO (LEON)",
+      "SAN JERONIMO",
+      "SAN JOSE",
+      "SAN JOSE SALINAS GRANDE",
+      "SAN JUAN (LEON)",
+      "SAN JUAN(LEON)",
+      "SAN JUDAS",
+      "SAN ROQUE SECTOR OJO DE AGUA",
+      "SAN SEBASTIAN",
+      "SANTA ELENA",
+      "SANTAMARIA",
+      "SANTIAGO DE LOS CABALLEROS",
+      "SAUL ALVAREZ",
+      "STA LUCIA LAS CHACARAS",
+      "STA TERESA",
+      "SUBTIAVA (SUR)",
+      "SUBTIAVA NORTE",
+      "TERMINAL",
+      "TODO SERA MEJOR(LEON)",
+      "TOLOLAR",
+      "TOMAS BORGE I ETAPA",
+      "TOMAS BORGE II ETAPA",
+      "UTRECHT",
+      "VALLE LA PRIMAVERA",
+      "VENCEREMOS(LEON)",
+      "VERACRUZ(LEON)",
+      "VERONICA LACAYO",
+      "VIGIL",
+      "VILLA 23 DE JULIO(LEON)",
+      "VILLA DEMOCRACIA",
+      "VILLA ESPERANZA (SALINAS GRANDES)",
+      "VILLA LA ASUNCION (LEON)",
+      "VILLA PANAMA",
+      "VILLA SOBERANA",
+      "WALTER FERRETI",
+      "WILLIAM FONSECA(LEON)"
+    ],
+    "TELICA": [
+      "BELLA VISTA",
+      "CARR. TELICA - SN. ISIDRO",
+      "CARR. TELICA-LEON",
+      "COM. EL TOLOLAR",
+      "COM. GRACIAS A DIOS",
+      "COM. LAS MARIAS",
+      "COM. PALO DE LAPA",
+      "COM. PUEBLO REDONDO",
+      "COM. QUIMERA",
+      "COM. TRABUCO",
+      "CORRAL FALSO",
+      "EL HATILLO",
+      "EL JICARITO",
+      "GARROBO EMPINADO",
+      "LA MORITA",
+      "LA SIRENA",
+      "LAS QUEMADAS",
+      "LOS COCOS",
+      "LOS GARCIA",
+      "LOS PATOS",
+      "LOS SALGADOS",
+      "LOS VELAZQUEZ",
+      "MIGUEL ANGEL ORTEZ",
+      "MONTE DE LOS OLIVOS",
+      "NUEVO AMANECER",
+      "NUEVO MOCORON",
+      "NVO BELEN",
+      "OJOCHAL",
+      "PASO DE LAJA",
+      "RPTO. ENABAS",
+      "RPTO. FELIX P. CARRILLO",
+      "SAN BENITO",
+      "SAN IGNACIO",
+      "SAN JACINTO(TELICA)",
+      "SAN PEDRO NUEVO",
+      "SANJON SANTO CRISTO",
+      "STA. ALICIA DE APANTE",
+      "TELICA NORTE",
+      "TELICA SUR",
+      "TELICA(LEON)",
+      "UNION ESPAÃ‘A LAS GRIETAS",
+      "VERONICA LACAYO(TELICA)"
+    ],
+    "QUEZALGUAQUE": [
+      "28 DE OCTUBRE",
+      "CARR. QUEZALG - CHINDGA",
+      "COM. CEIBA CHACHAGUA",
+      "COM. LOS POZOS",
+      "COMARCA BOQUERON",
+      "COMARCA LA ESTACION",
+      "COMARCA PACIENTE",
+      "COMARCA PUNTA ARENA",
+      "CRISTO REY",
+      "LAS MERCEDES",
+      "LAS MERCEDITAS",
+      "LOS REMEDIOS",
+      "MONTE SINAI",
+      "NUEVA SOLEDAD",
+      "PASO BENITO",
+      "PAZ Y RECONCILIACION",
+      "PUENTE PEREIRA",
+      "QUEZALGUAQUE(LEON)",
+      "RPTO. DANIEL AVENDAQO",
+      "RPTO. EL PORVENIR",
+      "RPTO. EMILIO ROSA",
+      "SAN AGUSTIN",
+      "SAN ANTONIO",
+      "SANTA ROSA",
+      "VERONICA LACAYO (QUEZALGUAQUE)"
+    ],
+    "LARREYNAGA": [
+      "BO. CAYETANO SANCHEZ",
+      "BO. PANCASAN",
+      "BO. PANTANAL",
+      "BO. RAUL SALGADO",
+      "CARRETA QUEMADA",
+      "CHARCO DE LOS BUEYES",
+      "COM EL BARRO",
+      "COM LAS LOMAS",
+      "COM. EL CAMBIO",
+      "COM. EL TERRERO",
+      "CORRE VIENTOS",
+      "EL APANTE",
+      "EL BRAMADERO(CHE GUEVARA)",
+      "EL CHORIZO",
+      "EL CHUCARO",
+      "EL ESPINO",
+      "EL LLANO",
+      "EL MADROÃ‘O",
+      "EL PARAGUA",
+      "EL PARAISO",
+      "EL PETEN",
+      "EL PIÃ‘UELAR",
+      "ERASMO CUADRA",
+      "GALILAO",
+      "JORGE BARRETO",
+      "LA FUENTE",
+      "LA LECHUZA",
+      "LA RINCONADA",
+      "LA SABANETA",
+      "LA UNION",
+      "LARREYNAGA(LEON)",
+      "LAS CALERAS JIÃ‘OCUAO",
+      "LAS LOMAS",
+      "LAS TROZAS",
+      "LOS CERRITOS",
+      "LOS JARDINEZ",
+      "LOS TERREROS",
+      "MALPAISILLO(LEON)",
+      "MINA EL LIMON(LEON)",
+      "NO UTILIZAR",
+      "NO UTILIZARLA",
+      "PAPALONAL(LEON)",
+      "PINTADIYAL",
+      "PORTOBANCO",
+      "PUEBLO LARREYNAGA",
+      "SAN AGUSTIN",
+      "SAN ANDRES RANCHERIAS",
+      "SAN CLAUDIO",
+      "SAN GIL",
+      "SAN IDELFONSO",
+      "SAN JACINTO(LEON)",
+      "SANTA ISABEL",
+      "SANTA ROSA DE LOS PARRALES",
+      "SANTA TERESA",
+      "TOLAPA",
+      "VALLE LA ZAPATA",
+      "WALTER FERRETI",
+      "XOCHILT ACALT"
+    ],
+    "EL JICARAL": [
+      "COM. LA DEFENSA",
+      "EL JICARAL (LEON)",
+      "EL TAMARINDO",
+      "LA CARBONERA",
+      "LA MONTAÃ‘ITA(EL JICARAL)",
+      "LAS MOJARRAS",
+      "LOS ZARZALES",
+      "SANTA CRUZ",
+      "VILLA SAMARIA"
+    ],
+    "NAGAROTE": [
+      "AUGUSTO C. SANDINO",
+      "B. NUEVO (NAGAROTE)",
+      "BETANIA",
+      "BO. ARIEL SABALLOS",
+      "BO. CAMILO ORTEGA",
+      "BO. CARLOS FONSECA",
+      "BO. EDGARDO COREA",
+      "BO. FRANCISCO ESTRADA",
+      "BO. GENIZARO",
+      "BO. GERMAN POMARES",
+      "BO. GUADALUPE",
+      "BO. JULIO BUITRAGO",
+      "BO. LOS ANGELES",
+      "BO. LUIS ANTONIO OJEDA",
+      "BO. LUIS DE LA LLANA",
+      "BO. ORLANDO CACERES",
+      "BO. SAN JULIAN",
+      "BO. SAN MARTIN",
+      "CARRET NVA LEON (C.SANDI)",
+      "COM. MONTECRISTO",
+      "EL CHORIZO",
+      "EL GUANACASTE",
+      "EL PORVENIR(NAGAROTE)",
+      "EL RECREO",
+      "EL TRIUNFO",
+      "EL VELERO",
+      "ERMITA C.JESUS(NAGAROTE)",
+      "JAIRO PEREZ (NAGAROTE)",
+      "JERONIMO LOPEZ(NAGAROTE",
+      "LA CHILAMA",
+      "LA CREADORA",
+      "LA GLORIA",
+      "LAS BRISAS",
+      "LAS LIMAS",
+      "LAS PILAS(S.C)",
+      "LOS COCOS",
+      "LOS MOJONES",
+      "LOS OJEDAS",
+      "M. PALACIOS(NAGAROTE)",
+      "MIRAMAR",
+      "NAGAROTE(LEON)",
+      "ORLANDO CACERES(NAGART",
+      "PANCASAN(NAGOROTE)",
+      "PLANTA NICARAGUA",
+      "PLAYA HERMOSA(NAGAROTE)",
+      "PORVENIR(NAGORETE)",
+      "PTO SANDINO (LA PAZ CENTR",
+      "S.MAYORGA(LAS PARCELAS)",
+      "SAN ANTONIO",
+      "SANTA ANA",
+      "SANTA LUCIA",
+      "SANTIAGO(NAGAROTE)",
+      "SONRISA DE DIOS",
+      "THOMAS MARTINEZ",
+      "TIERRA PROMETIDA",
+      "VALLE DE JESUS(NAGAROTE)",
+      "VILLA SANTA ELENA"
+    ],
+    "EL SAUCE": [
+      "AGUAS FRIAS",
+      "ALMENDRO",
+      "APANGARE",
+      "BO.VALENCIA",
+      "CARR. SAUCE-RIO GRANDE",
+      "CARR. SAUCE-VILLANUEVA",
+      "CASERIO SAN MIGUELITO",
+      "CERRO DE HULE",
+      "EL BORBOLLON",
+      "EL CAMPAMENTO",
+      "EL GUANACASTE",
+      "EL LLANO DEL OCOTAL",
+      "EL PAPALON",
+      "EL SAUCE(LEON)",
+      "EL TEMPISQUE",
+      "EL VALLE",
+      "GAMEZ",
+      "GUACIMO",
+      "GUACUCAL",
+      "GUAPINOL",
+      "HATO NUEVO",
+      "HATO VIEJO",
+      "ISMAEL CASTILLO",
+      "IVAN VILCHEZ",
+      "LA CENICERA",
+      "LA ESPERANZA",
+      "LA HORQUETA",
+      "LA JOYA",
+      "LA LAGUNETA",
+      "LA MONTAÃ‘ITA",
+      "LA PALMA",
+      "LA PARROQUIA",
+      "LA SABANA",
+      "LAS CALDERAS",
+      "LAS MESITAS",
+      "LAS PARCELAS",
+      "LAS PILAS",
+      "LOS CERRITOS",
+      "LOS ENCUENTROS",
+      "LOS JOVITOS",
+      "LOS LIMONES",
+      "LOS LOROS",
+      "LOS MEDINA",
+      "LOS MONTOYA",
+      "LOS PANALES",
+      "LOS ROCHA",
+      "LOS TOLOLOS",
+      "MERCEDES CENTRO",
+      "NACASCOLO",
+      "NAGUALAPA",
+      "PETAQUILLA",
+      "POZA AZUL",
+      "RIO GRANDE (EL SAUCE)",
+      "SABANA GRANDE",
+      "SALALE",
+      "SAN AGUSTIN",
+      "SAN FERNANDO",
+      "SAN JOSE",
+      "SAN NICOLAS",
+      "SAN RAMON(EL SAUCE)",
+      "SANTA BARBARA",
+      "SUBTIAVA",
+      "VALLE SAN MARTIN",
+      "VARELA",
+      "VILLANUEVA"
+    ],
+    "ACHUAPA": [
+      "ACHUAPA",
+      "COM. LOS CARAOS",
+      "COM. LOS GUASIMOS",
+      "COM. WISQUILI",
+      "EL BARRO",
+      "EL CACAO",
+      "EL CARACOL",
+      "EL CARRIZO",
+      "EL CONSUELO",
+      "EL GUARUMA",
+      "EL PAJARITO LAS BRISAS",
+      "LA PERLA",
+      "LAS CALERAS",
+      "LAS TABLAS",
+      "LOS CORRALITOS",
+      "LOS LLANITOS",
+      "OJO DE AGUA",
+      "PUEBLO DE ACHUAPA",
+      "RIO ARRIBA",
+      "SAN NICOLAS DE ACHUAPA"
+    ],
+    "SANTA ROSA DEL PEÃ‘ON": [
+      "STA. ROSA DEL PEÃ‘ON(LEON)"
+    ]
+  },
+  "CHONTALES": {
+    "ACOYAPA": [
+      "TODA AMERICA"
+    ]
+  },
+  "MANAGUA": {
+    "TICUANTEPE": [
+      "LOS ALMENDROS"
+    ]
+  },
+  "NVA. SEGOVIA": {
+    "OCOTAL": [
+      "SANTA ANA"
+    ]
+  },
+  "BOACO": {
+    "BOACO": [
+      "LA BOMBILLA"
+    ]
+  }
+};
+
+    let currentPage = 1;
+    const pageSize = 15;
+    let totalRecords = 0;
+
+    const deptSelect = document.getElementById('filter-department');
+    const muniSelect = document.getElementById('filter-municipality');
+    const locSelect = document.getElementById('filter-locality');
+
+    function populateSelect(select, options, defaultText) {
+        select.innerHTML = '<option value="">' + defaultText + '</option>';
+        options.forEach(opt => {
+            const el = document.createElement('option');
+            el.value = opt;
+            el.textContent = opt;
+            select.appendChild(el);
+        });
+    }
+
+    function setupCascadingDropdowns() {
+        // Populate Departments
+        const departments = Object.keys(locationData).sort();
+        populateSelect(deptSelect, departments, 'All Departments');
+
+        deptSelect.addEventListener('change', () => {
+            const dept = deptSelect.value;
+            if (dept) {
+                const municipalities = Object.keys(locationData[dept] || {}).sort();
+                populateSelect(muniSelect, municipalities, 'All Municipalities');
+                populateSelect(locSelect, [], 'All Localities'); // Reset localities
+            } else {
+                populateSelect(muniSelect, [], 'All Municipalities');
+                populateSelect(locSelect, [], 'All Localities');
+            }
+            currentPage = 1;
             fetchData();
-
-            document.getElementById('btn-filter').addEventListener('click', () => {
-                currentPage = 1;
-                fetchData();
-            });
-
-            // Permite filtrar al presionar "Enter" en los inputs
-            const selects = document.querySelectorAll('select');
-            selects.forEach(select => {
-                select.addEventListener('change', () => {
-                    currentPage = 1;
-                    fetchData();
-                });
-            });
-
-            document.getElementById('btn-prev').addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    fetchData();
-                }
-            });
-
-            document.getElementById('btn-next').addEventListener('click', () => {
-                if (currentPage * pageSize < totalRecords) {
-                    currentPage++;
-                    fetchData();
-                }
-            });
         });
 
-        async function fetchData() {
-            const tbody = document.getElementById('niss-table-body');
-            tbody.innerHTML = '<tr><td colspan="5" class="px-6 py-5 text-center text-on-surface-variant font-body-md">Loading records...</td></tr>';
-            
-            const dept = document.getElementById('filter-department').value.trim();
-            const muni = document.getElementById('filter-municipality').value.trim();
-            const loc = document.getElementById('filter-locality').value.trim();
-
-            let query = supabase.from(TABLE_NAME).select('*', { count: 'exact' });
-
-            if (dept) query = query.ilike('Departamento', `%${dept}%`);
-            if (muni) query = query.ilike('Municipio', `%${muni}%`);
-            if (loc) query = query.ilike('Localidad', `%${loc}%`);
-
-            const from = (currentPage - 1) * pageSize;
-            const to = from + pageSize - 1;
-
-            query = query.range(from, to).order('NIS', { ascending: true });
-
-            const { data, error, count } = await query;
-
-            if (error) {
-                console.error('Error fetching data:', error);
-                tbody.innerHTML = '<tr><td colspan="5" class="px-6 py-5 text-center text-error font-bold">Error loading records: ' + error.message + '</td></tr>';
-                return;
+        muniSelect.addEventListener('change', () => {
+            const dept = deptSelect.value;
+            const muni = muniSelect.value;
+            if (dept && muni) {
+                const localities = locationData[dept][muni] || [];
+                populateSelect(locSelect, localities, 'All Localities');
+            } else {
+                populateSelect(locSelect, [], 'All Localities');
             }
+            currentPage = 1;
+            fetchData();
+        });
 
-            totalRecords = count || 0;
-            document.getElementById('total-count').innerText = `${totalRecords.toLocaleString()} Total`;
-            
-            const startRecord = totalRecords === 0 ? 0 : from + 1;
-            const endRecord = Math.min(to + 1, totalRecords);
-            document.getElementById('pagination-info').innerText = `Showing ${startRecord} to ${endRecord} of ${totalRecords.toLocaleString()} records`;
-            document.getElementById('btn-page').innerText = currentPage;
-            
-            document.getElementById('btn-prev').disabled = currentPage === 1;
-            document.getElementById('btn-next').disabled = endRecord >= totalRecords;
+        locSelect.addEventListener('change', () => {
+            currentPage = 1;
+            fetchData();
+        });
+    }
 
-            renderTable(data);
+    document.addEventListener('DOMContentLoaded', () => {
+        setupUIInteractions();
+        setupCascadingDropdowns();
+        fetchData();
+
+        document.getElementById('btn-filter').addEventListener('click', () => {
+            currentPage = 1;
+            fetchData();
+        });
+
+        document.getElementById('btn-prev').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                fetchData();
+            }
+        });
+
+        document.getElementById('btn-next').addEventListener('click', () => {
+            if (currentPage * pageSize < totalRecords) {
+                currentPage++;
+                fetchData();
+            }
+        });
+    });
+
+    async function fetchData() {
+        const tbody = document.getElementById('niss-table-body');
+        tbody.innerHTML = '<tr><td colspan="5" class="px-6 py-5 text-center text-on-surface-variant font-body-md">Loading records...</td></tr>';
+        
+        const dept = deptSelect.value.trim();
+        const muni = muniSelect.value.trim();
+        const loc = locSelect.value.trim();
+
+        let query = supabase.from(TABLE_NAME).select('*', { count: 'exact' });
+
+        if (dept) query = query.eq('Departamento', dept);
+        if (muni) query = query.eq('Municipio', muni);
+        if (loc) query = query.eq('Localidad', loc);
+
+        const from = (currentPage - 1) * pageSize;
+        const to = from + pageSize - 1;
+
+        query = query.range(from, to).order('NIS', { ascending: true });
+
+        const { data, error, count } = await query;
+
+        if (error) {
+            console.error('Error fetching data:', error);
+            tbody.innerHTML = '<tr><td colspan="5" class="px-6 py-5 text-center text-error font-bold">Error loading records: ' + error.message + '</td></tr>';
+            return;
         }
 
-        function renderTable(records) {
-            const tbody = document.getElementById('niss-table-body');
-            tbody.innerHTML = '';
+        totalRecords = count || 0;
+        document.getElementById('total-count').innerText = `${totalRecords.toLocaleString()} Total`;
+        
+        const startRecord = totalRecords === 0 ? 0 : from + 1;
+        const endRecord = Math.min(to + 1, totalRecords);
+        document.getElementById('pagination-info').innerText = `Showing ${startRecord} to ${endRecord} of ${totalRecords.toLocaleString()} records`;
+        document.getElementById('btn-page').innerText = currentPage;
+        
+        document.getElementById('btn-prev').disabled = currentPage === 1;
+        document.getElementById('btn-next').disabled = endRecord >= totalRecords;
 
-            if (records.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="5" class="px-6 py-5 text-center text-on-surface-variant font-body-md">No records found matching filters.</td></tr>';
-                return;
-            }
+        renderTable(data);
+    }
 
-            records.forEach(row => {
-                const tr = document.createElement('tr');
-                tr.className = 'hover:bg-surface-container-low/30 transition-colors group';
+    function renderTable(records) {
+        const tbody = document.getElementById('niss-table-body');
+        tbody.innerHTML = '';
 
-                // Usamos un ícono por defecto
-                let icon = 'person';
-                
-                tr.innerHTML = `
+        if (records.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5" class="px-6 py-5 text-center text-on-surface-variant font-body-md">No records found matching filters.</td></tr>';
+            return;
+        }
+
+        records.forEach(row => {
+            const tr = document.createElement('tr');
+            tr.className = 'hover:bg-surface-container-low/30 transition-colors group';
+
+            let icon = 'person';
+            
+            tr.innerHTML = `
 <td class="px-6 py-5">
 <span class="font-mono-data text-mono-data text-primary font-bold">${row.NIS || '-'}</span>
 </td>
@@ -1428,19 +1601,18 @@
 <span class="material-symbols-outlined" data-icon="visibility">visibility</span>
 </button>
 </td>`;
-                tbody.appendChild(tr);
-            });
-        }
+            tbody.appendChild(tr);
+        });
+    }
 
-        function setupUIInteractions() {
-            // Smooth scale hover for buttons
-            const buttons = document.querySelectorAll('button');
-            buttons.forEach(btn => {
-                btn.addEventListener('mousedown', () => btn.classList.add('scale-95'));
-                btn.addEventListener('mouseup', () => btn.classList.remove('scale-95'));
-                btn.addEventListener('mouseleave', () => btn.classList.remove('scale-95'));
-            });
-        }
-    </script>
+    function setupUIInteractions() {
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(btn => {
+            btn.addEventListener('mousedown', () => btn.classList.add('scale-95'));
+            btn.addEventListener('mouseup', () => btn.classList.remove('scale-95'));
+            btn.addEventListener('mouseleave', () => btn.classList.remove('scale-95'));
+        });
+    }
+</script>
 </body>
 </html>
